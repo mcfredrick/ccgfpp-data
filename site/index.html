@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harvest Piles — Chelmsford Community Garden Food Pantry Plot</title>
+<style>
+  :root {
+    color-scheme: light;
+    --page:           #f9f9f7;
+    --surface-1:      #fcfcfb;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --border:         rgba(11,11,11,0.10);
+    --baseline:       #c3c2b7;
+    --track:          #e1e0d9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color-scheme: dark;
+      --page:           #0d0d0d;
+      --surface-1:      #1a1a19;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --border:         rgba(255,255,255,0.10);
+      --baseline:       #383835;
+      --track:          #2c2c2a;
+    }
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--page);
+    color: var(--text-primary);
+    margin: 0;
+  }
+  main {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 28px 20px 48px;
+  }
+  .eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0 0 4px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 20px;
+  }
+
+  .controls {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+  }
+  .range-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    font-variant-numeric: tabular-nums;
+  }
+  .slider-wrap {
+    position: relative;
+    height: 28px;
+  }
+  .slider-wrap input[type=range] {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    margin: 0;
+    background: transparent;
+    pointer-events: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  .slider-wrap input[type=range]::-webkit-slider-runnable-track {
+    height: 4px;
+    background: var(--track);
+    border-radius: 2px;
+  }
+  .slider-wrap input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    pointer-events: auto;
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    background: var(--text-primary);
+    border: 2px solid var(--surface-1);
+    margin-top: -6px;
+    cursor: pointer;
+  }
+  .slider-wrap input[type=range]::-moz-range-track {
+    height: 4px;
+    background: var(--track);
+    border-radius: 2px;
+  }
+  .slider-wrap input[type=range]::-moz-range-thumb {
+    pointer-events: auto;
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    background: var(--text-primary);
+    border: 2px solid var(--surface-1);
+    cursor: pointer;
+  }
+  .presets {
+    display: flex;
+    gap: 6px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+  }
+  .presets button {
+    font: inherit;
+    font-size: 12px;
+    color: var(--text-secondary);
+    background: var(--page);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 5px 12px;
+    cursor: pointer;
+  }
+  .presets button:hover { color: var(--text-primary); }
+
+  .stage {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 16px 0;
+  }
+  .lanes {
+    display: flex;
+    gap: 4px;
+  }
+  .lane {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lane-count {
+    font-size: 15px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+  .lane-unit {
+    font-size: 11px;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+  .lane-stage {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+  }
+  .icon {
+    position: absolute;
+    top: 0; left: 0;
+    will-change: transform;
+  }
+  .icon svg { width: 100%; height: 100%; display: block; }
+  .lane-name {
+    margin-top: 8px;
+    padding-bottom: 16px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-align: center;
+  }
+  .footnote {
+    font-size: 12px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 16px 0 0;
+  }
+  .loading, .error {
+    font-size: 14px;
+    color: var(--text-muted);
+    padding: 40px 0;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<main>
+  <p class="eyebrow">Chelmsford Community Garden — Food Pantry Plot</p>
+  <h1 id="pageTitle">Harvest Piles</h1>
+
+  <div id="app">
+    <p class="loading">Loading harvest data&hellip;</p>
+  </div>
+
+  <p class="footnote">
+    Each crop keeps its own recorded unit (bunches, "#", pints) rather than converting to a common measure — 1 icon = 5 units, so pile height is comparable across crops even though the unit differs. Weight/meal-equivalent conversions are planned as a separate, secondary view.
+  </p>
+</main>
+
+<script>
+(async function () {
+  const CROPS = [
+    { crop: "Tomatoes, salad/slicer", color: "#e34948", darkColor: "#e66767", shape: "tomato" },
+    { crop: "Peppers",                color: "#eb6834", darkColor: "#d95926", shape: "pepper" },
+    { crop: "Lettuce",                color: "#008300", darkColor: "#008300", shape: "lettuce" },
+    { crop: "Zucchini",               color: "#1baf7a", darkColor: "#199e70", shape: "zucchini" },
+    { crop: "Summer Squash",          color: "#eda100", darkColor: "#c98500", shape: "squash" },
+  ];
+
+  const UNITS_PER_ICON = 5;
+  const GRAVITY = 0.6;
+  const DAMPING = 0.98;
+  const SPAWN_INTERVAL_MS = 18;
+  const SLEEP_DISP = 0.05;
+  const SLEEP_FRAMES = 10;
+  const COLLISION_ITERATIONS = 4;
+
+  const appEl = document.getElementById("app");
+
+  let allRecords;
+  try {
+    const res = await fetch("data/harvests.json");
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    allRecords = await res.json();
+  } catch (err) {
+    appEl.innerHTML = `<p class="error">Couldn't load harvest data (${err.message}). Run scripts/parse_sheet.py and copy data/tidy/harvests.json to site/data/harvests.json.</p>`;
+    return;
+  }
+
+  // Always show the most recent season in the data -- no hardcoded year, so a
+  // new year's tab just works once it's pulled and parsed (see scripts/parse_sheet.py).
+  const YEAR = Math.max(...allRecords.map(r => r.year));
+  document.getElementById("pageTitle").textContent = `Harvest Piles — ${YEAR}`;
+
+  const yearRecords = allRecords.filter(r => r.year === YEAR);
+  const WEEKS = [...new Set(yearRecords.map(r => r.date))].sort();
+  const RECORDS = yearRecords.filter(r => CROPS.some(c => c.crop === r.crop));
+
+  if (WEEKS.length === 0) {
+    appEl.innerHTML = `<p class="error">No records found for ${YEAR}.</p>`;
+    return;
+  }
+
+  appEl.innerHTML = `
+    <div class="controls">
+      <div class="range-label" id="rangeLabel"></div>
+      <div class="slider-wrap">
+        <input type="range" id="fromSlider" min="0" max="${WEEKS.length - 1}" value="0" step="1" />
+        <input type="range" id="toSlider" min="0" max="${WEEKS.length - 1}" value="${WEEKS.length - 1}" step="1" />
+      </div>
+      <div class="presets" id="presets">
+        <button data-preset="full">Full season</button>
+      </div>
+    </div>
+    <div class="stage">
+      <div class="lanes" id="lanes"></div>
+    </div>
+  `;
+
+  // month preset buttons, generated from whatever months actually appear this season
+  const months = [...new Set(WEEKS.map(w => new Date(w + "T00:00:00").getMonth() + 1))];
+  const monthNames = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const presetsEl = document.getElementById("presets");
+  months.forEach(m => {
+    const btn = document.createElement("button");
+    btn.dataset.preset = String(m);
+    btn.textContent = monthNames[m];
+    presetsEl.appendChild(btn);
+  });
+
+  const isDark = () => window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const SHAPES = {
+    tomato: '<circle cx="12" cy="13" r="8" /><path d="M9 6c1-1.5 2-2 3-2s2 .5 3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />',
+    pepper: '<path d="M12 4c-1.2 0-1.8 1-1.8 2 0 .5.2 1 .2 1-3 .5-5 3.5-5 7 0 4 2.8 7 6.6 7s6.6-3 6.6-7c0-3.5-2-6.5-5-7 0 0 .2-.5.2-1 0-1-.6-2-1.8-2z" />',
+    lettuce: '<path d="M12 20c-4.5 0-8-3.2-8-7.8C4 8.3 7.6 4 12 4s8 4.3 8 8.2C20 16.8 16.5 20 12 20z" /><path d="M12 20V6M8 18l-2-9M16 18l2-9M9.5 19l-3-11M14.5 19l3-11" stroke="var(--surface-1)" stroke-width="0.8" fill="none" opacity="0.5" />',
+    zucchini: '<rect x="3" y="10" width="18" height="6" rx="3" transform="rotate(-8 12 13)" />',
+    squash: '<path d="M12 5c1 0 1.6.9 1.6 2 0 .6-.2 1-.2 1 3.6.5 6.6 3.4 6.6 7.3 0 3.6-3 6.7-8 6.7s-8-3.1-8-6.7c0-3.9 3-6.8 6.6-7.3 0 0-.2-.4-.2-1 0-1.1.6-2 1.6-2z" />',
+  };
+
+  function svgFor(shape, color) {
+    return `<svg viewBox="0 0 24 24" fill="${color}">${SHAPES[shape]}</svg>`;
+  }
+
+  function countsForRange(fromIdx, toIdx) {
+    const fromDate = WEEKS[fromIdx];
+    const toDate = WEEKS[toIdx];
+    const totals = {};
+    CROPS.forEach(c => totals[c.crop] = 0);
+    RECORDS.forEach(r => {
+      if (r.date >= fromDate && r.date <= toDate && totals.hasOwnProperty(r.crop)) {
+        totals[r.crop] += r.quantity;
+      }
+    });
+    return totals;
+  }
+
+  // ---- physics ----
+  const lanes = [];
+
+  function buildLanes() {
+    const container = document.getElementById("lanes");
+    container.innerHTML = "";
+    CROPS.forEach(c => {
+      const lane = document.createElement("div");
+      lane.className = "lane";
+      lane.innerHTML = `
+        <div class="lane-count" data-count>0</div>
+        <div class="lane-unit" data-unit></div>
+        <div class="lane-stage" data-stage></div>
+        <div class="lane-name">${c.crop}</div>
+      `;
+      container.appendChild(lane);
+      const stageEl = lane.querySelector("[data-stage]");
+      lanes.push({
+        crop: c.crop,
+        color: isDark() ? c.darkColor : c.color,
+        shape: c.shape,
+        stageEl,
+        countEl: lane.querySelector("[data-count]"),
+        unitEl: lane.querySelector("[data-unit]"),
+        icons: [],
+      });
+    });
+  }
+
+  function spawnIcon(lane, radius) {
+    const width = lane.stageEl.clientWidth;
+    const el = document.createElement("div");
+    el.className = "icon";
+    el.style.width = el.style.height = radius * 2 + "px";
+    el.innerHTML = svgFor(lane.shape, lane.color);
+    lane.stageEl.appendChild(el);
+    // average of 3 uniform samples biases spawn x toward lane center (Irwin-Hall-ish),
+    // so piles mound in the middle instead of avalanching toward the edges
+    const usable = width - radius * 2;
+    const centered = (Math.random() + Math.random() + Math.random()) / 3;
+    const x = radius + centered * usable;
+    const y = -radius * 2 - Math.random() * 40;
+    const icon = {
+      el,
+      r: radius,
+      x,
+      y,
+      oldX: x - (Math.random() - 0.5) * 1.5, // implied initial vx via Verlet
+      oldY: y,
+      stillFrames: 0,
+      asleep: false,
+    };
+    lane.icons.push(icon);
+  }
+
+  function clearLane(lane) {
+    lane.stageEl.innerHTML = "";
+    lane.icons = [];
+  }
+
+  let spawnQueue = [];
+  let spawnTimer = null;
+
+  function triggerDump(fromIdx, toIdx) {
+    const totals = countsForRange(fromIdx, toIdx);
+    lanes.forEach(lane => {
+      clearLane(lane);
+      const total = totals[lane.crop] || 0;
+      const unit = (RECORDS.find(r => r.crop === lane.crop) || {}).unit || "";
+      lane.countEl.textContent = Math.round(total).toLocaleString();
+      lane.unitEl.textContent = unit;
+      lane.iconTarget = Math.max(total > 0 ? 1 : 0, Math.round(total / UNITS_PER_ICON));
+    });
+
+    if (spawnTimer) clearInterval(spawnTimer);
+    spawnQueue = lanes.map(lane => ({ lane, remaining: lane.iconTarget }));
+    spawnTimer = setInterval(() => {
+      let anyLeft = false;
+      spawnQueue.forEach(q => {
+        if (q.remaining > 0) {
+          spawnIcon(q.lane, 9);
+          q.remaining--;
+          anyLeft = true;
+        }
+      });
+      if (!anyLeft) clearInterval(spawnTimer);
+    }, SPAWN_INTERVAL_MS);
+  }
+
+  function step() {
+    lanes.forEach(lane => {
+      const width = lane.stageEl.clientWidth;
+      const height = lane.stageEl.clientHeight;
+      const icons = lane.icons;
+
+      // Verlet integration: velocity is implied by (current - previous position),
+      // so a position correction that cancels an icon's motion (resting contact)
+      // automatically zeroes its implied velocity too -- no separate velocity
+      // bookkeeping to fall out of sync with the corrections below.
+      icons.forEach(icon => {
+        if (icon.asleep) return;
+        const vx = (icon.x - icon.oldX) * DAMPING;
+        const vy = (icon.y - icon.oldY) * DAMPING;
+        icon.oldX = icon.x;
+        icon.oldY = icon.y;
+        icon.x += vx;
+        icon.y += vy + GRAVITY;
+
+        if (icon.x - icon.r < 0) icon.x = icon.r;
+        if (icon.x + icon.r > width) icon.x = width - icon.r;
+        if (icon.y + icon.r > height) icon.y = height - icon.r;
+      });
+
+      // Multiple passes let corrections propagate through a stack of overlapping
+      // icons in one frame -- a single pass isn't enough to resolve a real pile.
+      for (let iter = 0; iter < COLLISION_ITERATIONS; iter++) {
+        for (let i = 0; i < icons.length; i++) {
+          for (let j = i + 1; j < icons.length; j++) {
+            const a = icons[i], b = icons[j];
+            if (a.asleep && b.asleep) continue;
+            const dx = b.x - a.x, dy = b.y - a.y;
+            const dist = Math.hypot(dx, dy) || 0.01;
+            const minDist = a.r + b.r;
+            if (dist < minDist) {
+              const overlap = minDist - dist;
+              const nx = dx / dist, ny = dy / dist;
+              if (a.asleep) {
+                b.x += nx * overlap; b.y += ny * overlap;
+              } else if (b.asleep) {
+                a.x -= nx * overlap; a.y -= ny * overlap;
+              } else {
+                a.x -= nx * overlap / 2; a.y -= ny * overlap / 2;
+                b.x += nx * overlap / 2; b.y += ny * overlap / 2;
+              }
+              if (a.x - a.r < 0) a.x = a.r;
+              if (a.x + a.r > width) a.x = width - a.r;
+              if (a.y + a.r > height) a.y = height - a.r;
+              if (b.x - b.r < 0) b.x = b.r;
+              if (b.x + b.r > width) b.x = width - b.r;
+              if (b.y + b.r > height) b.y = height - b.r;
+            }
+          }
+        }
+      }
+
+      icons.forEach(icon => {
+        if (icon.asleep) return;
+        const disp = Math.hypot(icon.x - icon.oldX, icon.y - icon.oldY);
+        if (disp < SLEEP_DISP) {
+          icon.stillFrames++;
+          if (icon.stillFrames > SLEEP_FRAMES) {
+            icon.asleep = true;
+            icon.oldX = icon.x;
+            icon.oldY = icon.y;
+          }
+        } else {
+          icon.stillFrames = 0;
+        }
+      });
+
+      icons.forEach(icon => {
+        icon.el.style.transform = `translate(${icon.x - icon.r}px, ${icon.y - icon.r}px)`;
+      });
+    });
+    requestAnimationFrame(step);
+  }
+
+  // ---- controls ----
+  const fromSlider = document.getElementById("fromSlider");
+  const toSlider = document.getElementById("toSlider");
+  const rangeLabel = document.getElementById("rangeLabel");
+
+  function fmt(dateStr) {
+    const d = new Date(dateStr + "T00:00:00");
+    return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  }
+
+  function updateFromSliders() {
+    let from = parseInt(fromSlider.value, 10);
+    let to = parseInt(toSlider.value, 10);
+    if (from > to) { [from, to] = [to, from]; }
+    rangeLabel.textContent = `${fmt(WEEKS[from])} – ${fmt(WEEKS[to])}, ${YEAR}`;
+    triggerDump(from, to);
+  }
+
+  fromSlider.addEventListener("change", updateFromSliders);
+  toSlider.addEventListener("change", updateFromSliders);
+
+  presetsEl.addEventListener("click", (e) => {
+    const btn = e.target.closest("button");
+    if (!btn) return;
+    const preset = btn.dataset.preset;
+    if (preset === "full") {
+      fromSlider.value = 0;
+      toSlider.value = WEEKS.length - 1;
+    } else {
+      const month = parseInt(preset, 10);
+      const idxs = WEEKS.map((w, i) => ({ w, i })).filter(({ w }) => new Date(w + "T00:00:00").getMonth() + 1 === month);
+      if (idxs.length) {
+        fromSlider.value = idxs[0].i;
+        toSlider.value = idxs[idxs.length - 1].i;
+      }
+    }
+    updateFromSliders();
+  });
+
+  buildLanes();
+  requestAnimationFrame(step);
+  updateFromSliders();
+})();
+</script>
+</body>
+</html>

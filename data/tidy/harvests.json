@@ -1,0 +1,4934 @@
+[
+  {
+    "year": 2025,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2025-07-25",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2025-07-31",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2025-08-07",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2025-09-04",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2025-09-11",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2025-09-18",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2025-10-23",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-07-25",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-07-31",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-08-07",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-08-21",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-08-28",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-09-04",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-09-11",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-09-18",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-09-25",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-10-02",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-10-09",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-10-16",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "bunch",
+    "date": "2025-10-23",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2025-09-04",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2025-09-11",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2025-09-18",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2025-10-02",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2025-10-16",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2025-10-23",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2025-07-25",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2025-07-31",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2025-08-14",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2025-08-21",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2025-09-04",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Garlic",
+    "crop_raw": "Garlic",
+    "unit": "#",
+    "date": "2025-09-18",
+    "quantity": 16.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Garlic",
+    "crop_raw": "Garlic",
+    "unit": "#",
+    "date": "2025-10-23",
+    "quantity": 16.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Green beans",
+    "crop_raw": "Green beans",
+    "unit": "bunch",
+    "date": "2025-09-04",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Green beans",
+    "crop_raw": "Green beans",
+    "unit": "bunch",
+    "date": "2025-10-09",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-06-26",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-07-17",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-07-25",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-07-31",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-08-14",
+    "quantity": 13.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-08-21",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-08-28",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-09-04",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-09-11",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-09-18",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-09-25",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-10-02",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-10-16",
+    "quantity": 13.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2025-10-23",
+    "quantity": 15.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-06-26",
+    "quantity": 25.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-07-03",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-07-17",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-07-25",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-07-31",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-08-07",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-08-28",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-09-04",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-09-11",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-09-18",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-10-02",
+    "quantity": 23.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-10-09",
+    "quantity": 19.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-10-16",
+    "quantity": 18.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2025-10-23",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Onions",
+    "crop_raw": "Onions",
+    "unit": "bunch",
+    "date": "2025-07-25",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2025-08-07",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2025-08-21",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2025-08-28",
+    "quantity": 17.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2025-09-04",
+    "quantity": 16.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2025-09-11",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2025-09-18",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2025-09-25",
+    "quantity": 42.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2025-10-02",
+    "quantity": 79.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2025-10-09",
+    "quantity": 60.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Radishes",
+    "crop_raw": "Radishes",
+    "unit": "bunch",
+    "date": "2025-06-26",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Radishes",
+    "crop_raw": "Radishes",
+    "unit": "bunch",
+    "date": "2025-07-03",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Radishes",
+    "crop_raw": "Radishes",
+    "unit": "bunch",
+    "date": "2025-07-17",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-07-17",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-07-25",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-07-31",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-08-07",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-08-14",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-08-21",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-08-28",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-09-04",
+    "quantity": 15.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-09-11",
+    "quantity": 18.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-09-18",
+    "quantity": 20.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-09-25",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-10-02",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2025-10-09",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-07-17",
+    "quantity": 11.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-07-25",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-07-31",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-08-07",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-08-14",
+    "quantity": 11.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-08-21",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-08-28",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-09-04",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-09-11",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-09-18",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-09-25",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-10-02",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2025-10-16",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad/slicer",
+    "unit": "#",
+    "date": "2025-08-21",
+    "quantity": 39.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad/slicer",
+    "unit": "#",
+    "date": "2025-08-28",
+    "quantity": 123.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad/slicer",
+    "unit": "#",
+    "date": "2025-09-04",
+    "quantity": 62.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad/slicer",
+    "unit": "#",
+    "date": "2025-09-11",
+    "quantity": 34.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad/slicer",
+    "unit": "#",
+    "date": "2025-09-18",
+    "quantity": 87.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad/slicer",
+    "unit": "#",
+    "date": "2025-09-25",
+    "quantity": 86.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad/slicer",
+    "unit": "#",
+    "date": "2025-10-02",
+    "quantity": 19.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad/slicer",
+    "unit": "#",
+    "date": "2025-10-09",
+    "quantity": 41.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad/slicer",
+    "unit": "#",
+    "date": "2025-10-16",
+    "quantity": 43.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad/slicer",
+    "unit": "#",
+    "date": "2025-10-23",
+    "quantity": 28.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2025-07-31",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2025-08-07",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2025-08-14",
+    "quantity": 13.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2025-08-21",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2025-08-28",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2025-09-04",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2025-09-11",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2025-09-18",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2025-09-25",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2025-10-02",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2025-10-09",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2025-10-16",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-07-17",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-07-25",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-07-31",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-08-07",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-08-14",
+    "quantity": 20.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-08-21",
+    "quantity": 16.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-08-28",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-09-04",
+    "quantity": 20.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-09-11",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-09-18",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-09-25",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-10-02",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2025,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2025-10-09",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2024-07-10",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2024-07-31",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2024-08-07",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2024-09-25",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2024-07-31",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2024-08-14",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2024-08-21",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2024-08-28",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2024-09-11",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2024-09-18",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2024-09-25",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2024-06-26",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2024-08-07",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2024-08-21",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Garlic",
+    "crop_raw": "Garlic",
+    "unit": "#",
+    "date": "2024-09-18",
+    "quantity": 40.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Green beans",
+    "crop_raw": "Green beans",
+    "unit": "bunch",
+    "date": "2024-10-02",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2024-07-24",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2024-07-31",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2024-08-07",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2024-08-14",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2024-08-21",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2024-08-28",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2024-09-25",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2024-10-02",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2024-06-26",
+    "quantity": 31.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2024-07-03",
+    "quantity": 11.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2024-09-25",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2024-10-02",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Onions",
+    "crop_raw": "Onions",
+    "unit": "bunch",
+    "date": "2024-09-04",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Peas",
+    "crop_raw": "Peas",
+    "unit": "pint",
+    "date": "2024-06-26",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Peas",
+    "crop_raw": "Peas",
+    "unit": "pint",
+    "date": "2024-07-03",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Peas",
+    "crop_raw": "Peas",
+    "unit": "pint",
+    "date": "2024-07-10",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2024-07-31",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2024-08-28",
+    "quantity": 19.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2024-09-04",
+    "quantity": 20.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2024-09-11",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2024-09-18",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2024-09-25",
+    "quantity": 13.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Peppers",
+    "crop_raw": "Pepper",
+    "unit": "#",
+    "date": "2024-10-02",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Radishes",
+    "crop_raw": "Radishes",
+    "unit": "bunch",
+    "date": "2024-06-12",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Radishes",
+    "crop_raw": "Radishes",
+    "unit": "bunch",
+    "date": "2024-06-26",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2024-07-24",
+    "quantity": 17.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2024-07-31",
+    "quantity": 40.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2024-08-07",
+    "quantity": 38.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2024-08-14",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2024-08-21",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2024-08-28",
+    "quantity": 26.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2024-09-04",
+    "quantity": 21.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2024-09-11",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2024-09-18",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2024-09-25",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2024-07-10",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2024-07-24",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2024-07-31",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2024-08-07",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2024-08-14",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2024-08-21",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2024-08-28",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2024-09-04",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2024-09-25",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2024-10-02",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2024-07-31",
+    "quantity": 33.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2024-08-07",
+    "quantity": 115.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2024-08-14",
+    "quantity": 73.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2024-08-21",
+    "quantity": 61.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2024-08-28",
+    "quantity": 30.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2024-09-04",
+    "quantity": 52.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2024-09-11",
+    "quantity": 69.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2024-09-18",
+    "quantity": 79.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2024-09-25",
+    "quantity": 72.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2024-10-02",
+    "quantity": 17.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad",
+    "unit": "pint",
+    "date": "2024-10-02",
+    "quantity": 11.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2024-07-17",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2024-07-24",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2024-07-31",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2024-08-07",
+    "quantity": 17.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2024-08-14",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2024-08-21",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2024-08-28",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2024-09-04",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2024-09-11",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2024-09-18",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2024-09-25",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2024-10-02",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Turnips",
+    "crop_raw": "Turnips, Japanese",
+    "unit": "bunch",
+    "date": "2024-06-26",
+    "quantity": 1.0,
+    "donated": true
+  },
+  {
+    "year": 2024,
+    "crop": "Winter Squash",
+    "crop_raw": "Winter Squash",
+    "unit": "#",
+    "date": "2024-09-04",
+    "quantity": 2.0,
+    "donated": true
+  },
+  {
+    "year": 2024,
+    "crop": "Winter Squash",
+    "crop_raw": "Winter Squash",
+    "unit": "#",
+    "date": "2024-10-02",
+    "quantity": 1.0,
+    "donated": true
+  },
+  {
+    "year": 2024,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2024-07-17",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2024-07-24",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2024-07-31",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2024-08-07",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2024-08-14",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2024-08-21",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2024-08-28",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2024-09-04",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2024-09-18",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2024-09-25",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2024,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2024-10-02",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2023-07-13",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2023-07-20",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2023-07-27",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2023-08-03",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2023-08-10",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2023-08-31",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2023-10-05",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2023-10-26",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Bok choy",
+    "crop_raw": "Bok choy",
+    "unit": "bunch",
+    "date": "2023-09-28",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Bok choy",
+    "crop_raw": "Bok choy",
+    "unit": "bunch",
+    "date": "2023-10-12",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Cabbage",
+    "crop_raw": "Cabbage, Napa",
+    "unit": "#",
+    "date": "2023-10-19",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Cabbage",
+    "crop_raw": "Cabbage, Napa",
+    "unit": "#",
+    "date": "2023-10-26",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2023-08-10",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2023-08-17",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2023-08-31",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2023-10-05",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2023-10-26",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2023-08-03",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2023-08-10",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2023-08-17",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2023-08-24",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2023-09-07",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Daikon radish",
+    "crop_raw": "Daikon radish",
+    "unit": "bunch",
+    "date": "2023-08-17",
+    "quantity": 1.0,
+    "donated": true
+  },
+  {
+    "year": 2023,
+    "crop": "Daikon radish",
+    "crop_raw": "Daikon radish",
+    "unit": "bunch",
+    "date": "2023-08-24",
+    "quantity": 2.0,
+    "donated": true
+  },
+  {
+    "year": 2023,
+    "crop": "Daikon radish",
+    "crop_raw": "Daikon radish",
+    "unit": "bunch",
+    "date": "2023-08-31",
+    "quantity": 2.0,
+    "donated": true
+  },
+  {
+    "year": 2023,
+    "crop": "Daikon radish",
+    "crop_raw": "Daikon radish",
+    "unit": "bunch",
+    "date": "2023-09-07",
+    "quantity": 2.0,
+    "donated": true
+  },
+  {
+    "year": 2023,
+    "crop": "Garlic",
+    "crop_raw": "Garlic",
+    "unit": "#",
+    "date": "2023-09-07",
+    "quantity": 20.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Garlic scapes",
+    "crop_raw": "Garlic scapes",
+    "unit": "bunch",
+    "date": "2023-07-06",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Green beans",
+    "crop_raw": "Green beans",
+    "unit": "bunch",
+    "date": "2023-09-07",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Green beans",
+    "crop_raw": "Green beans",
+    "unit": "bunch",
+    "date": "2023-09-14",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Green beans",
+    "crop_raw": "Green beans",
+    "unit": "bunch",
+    "date": "2023-09-28",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Green beans",
+    "crop_raw": "Green beans",
+    "unit": "bunch",
+    "date": "2023-10-05",
+    "quantity": 11.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Green beans",
+    "crop_raw": "Green beans",
+    "unit": "bunch",
+    "date": "2023-10-12",
+    "quantity": 0.5,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-06-29",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-07-13",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-07-20",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-07-27",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-08-03",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-08-10",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-08-17",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-08-24",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-08-31",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-09-07",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-09-14",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-09-28",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-10-05",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-10-19",
+    "quantity": 18.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2023-10-26",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2023-06-15",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2023-06-22",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2023-06-29",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2023-07-06",
+    "quantity": 18.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2023-07-13",
+    "quantity": 33.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2023-07-20",
+    "quantity": 28.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2023-07-27",
+    "quantity": 17.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2023-08-03",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Parsley",
+    "crop_raw": "Parsley",
+    "unit": "bunch",
+    "date": "2023-07-20",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Parsley",
+    "crop_raw": "Parsley",
+    "unit": "bunch",
+    "date": "2023-08-31",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Peas",
+    "crop_raw": "Peas",
+    "unit": "pint",
+    "date": "2023-06-29",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Peas",
+    "crop_raw": "Peas",
+    "unit": "pint",
+    "date": "2023-07-06",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Peas",
+    "crop_raw": "Peas",
+    "unit": "pint",
+    "date": "2023-07-13",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Radishes",
+    "crop_raw": "Radishes",
+    "unit": "bunch",
+    "date": "2023-06-22",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Radishes",
+    "crop_raw": "Radishes",
+    "unit": "bunch",
+    "date": "2023-06-29",
+    "quantity": 13.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2023-07-13",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2023-07-20",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2023-07-27",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2023-08-03",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2023-08-24",
+    "quantity": 17.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2023-08-31",
+    "quantity": 22.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2023-09-07",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2023-09-14",
+    "quantity": 27.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2023-09-28",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2023-10-05",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2023-10-12",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2023-10-19",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2023-06-29",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2023-07-06",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2023-07-13",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2023-07-20",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2023-07-27",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2023-08-03",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2023-08-17",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2023-08-24",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2023-09-07",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2023-09-14",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2023-10-19",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2023-10-26",
+    "quantity": 11.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2023-07-27",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2023-08-10",
+    "quantity": 31.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2023-08-17",
+    "quantity": 40.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2023-08-24",
+    "quantity": 40.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2023-08-31",
+    "quantity": 26.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2023-09-07",
+    "quantity": 11.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2023-09-14",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2023-09-28",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2023-10-05",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2023-10-12",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2023-10-26",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad",
+    "unit": "lb",
+    "date": "2023-08-03",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2023-07-27",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2023-08-03",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2023-08-10",
+    "quantity": 26.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2023-08-17",
+    "quantity": 22.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2023-08-24",
+    "quantity": 23.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2023-08-31",
+    "quantity": 21.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2023-09-07",
+    "quantity": 16.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2023-09-14",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2023-09-28",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2023-10-05",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2023-10-12",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2023-10-19",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Turnips",
+    "crop_raw": "Turnips, Japanese",
+    "unit": "bunch",
+    "date": "2023-09-14",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Turnips",
+    "crop_raw": "Turnips, Japanese",
+    "unit": "bunch",
+    "date": "2023-09-28",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Turnips",
+    "crop_raw": "Turnips, Japanese",
+    "unit": "bunch",
+    "date": "2023-10-05",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Turnips",
+    "crop_raw": "Turnips, Japanese",
+    "unit": "bunch",
+    "date": "2023-10-12",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Turnips",
+    "crop_raw": "Turnips, Japanese",
+    "unit": "bunch",
+    "date": "2023-10-26",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Winter Squash",
+    "crop_raw": "Winter Squash",
+    "unit": "#",
+    "date": "2023-08-10",
+    "quantity": 9.0,
+    "donated": true
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-07-13",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-07-20",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-07-27",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-08-03",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-08-10",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-08-17",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-08-24",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-09-07",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-09-14",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-09-28",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-10-05",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-10-12",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2023,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2023-10-19",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Beets",
+    "crop_raw": "Beets",
+    "unit": "bunch",
+    "date": "2022-09-01",
+    "quantity": 12.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Bok choy",
+    "crop_raw": "Bok choy",
+    "unit": "bunch",
+    "date": "2022-06-09",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Bok choy",
+    "crop_raw": "Bok choy",
+    "unit": "bunch",
+    "date": "2022-06-23",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Bok choy",
+    "crop_raw": "Bok choy",
+    "unit": "bunch",
+    "date": "2022-06-30",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Bok choy",
+    "crop_raw": "Bok choy",
+    "unit": "bunch",
+    "date": "2022-07-07",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Bok choy",
+    "crop_raw": "Bok choy",
+    "unit": "bunch",
+    "date": "2022-07-14",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Bok choy",
+    "crop_raw": "Bok choy",
+    "unit": "bunch",
+    "date": "2022-10-20",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Bok choy",
+    "crop_raw": "Bok choy",
+    "unit": "bunch",
+    "date": "2022-11-03",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Broccoli",
+    "crop_raw": "Broccoli",
+    "unit": "head",
+    "date": "2022-11-03",
+    "quantity": 4.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Cabbage",
+    "crop_raw": "Cabbage",
+    "unit": "#",
+    "date": "2022-07-07",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Cabbage",
+    "crop_raw": "Cabbage",
+    "unit": "#",
+    "date": "2022-08-18",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2022-08-11",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2022-09-01",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2022-09-08",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2022-09-15",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Carrots",
+    "crop_raw": "Carrots",
+    "unit": "bunch",
+    "date": "2022-11-03",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Corn",
+    "crop_raw": "Corn",
+    "unit": "lb",
+    "date": "2022-08-25",
+    "quantity": 25.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Corn",
+    "crop_raw": "Corn",
+    "unit": "lb",
+    "date": "2022-09-01",
+    "quantity": 20.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2022-07-21",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2022-07-28",
+    "quantity": 20.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2022-08-04",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2022-08-11",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2022-08-25",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2022-09-01",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Cucumbers",
+    "crop_raw": "Cucumbers",
+    "unit": "#",
+    "date": "2022-09-08",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Eggplant",
+    "crop_raw": "Eggplant",
+    "unit": "#",
+    "date": "2022-09-29",
+    "quantity": 2.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Gai lan",
+    "crop_raw": "Gai lan",
+    "unit": "bunch",
+    "date": "2022-09-28",
+    "quantity": 13.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Gai lan",
+    "crop_raw": "Gai lan",
+    "unit": "bunch",
+    "date": "2022-09-29",
+    "quantity": 2.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Gai lan",
+    "crop_raw": "Gai lan",
+    "unit": "bunch",
+    "date": "2022-10-06",
+    "quantity": 2.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Greens, mixed",
+    "crop_raw": "Greens, mixed",
+    "unit": "bunch",
+    "date": "2022-06-09",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Greens, mixed",
+    "crop_raw": "Greens, mixed",
+    "unit": "bunch",
+    "date": "2022-06-30",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-06-16",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-06-23",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-06-30",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-07-07",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-07-14",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-07-21",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-07-28",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-08-04",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-08-18",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-08-25",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-09-01",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-09-08",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-09-15",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-09-28",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-09-29",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-10-06",
+    "quantity": 15.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-10-13",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-10-20",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-10-27",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Kale",
+    "crop_raw": "Kale",
+    "unit": "bunch",
+    "date": "2022-11-03",
+    "quantity": 17.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-06-02",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-06-16",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-06-23",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-06-30",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-07-07",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-07-14",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-07-21",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-08-18",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-08-25",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-09-01",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-09-08",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-09-15",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-09-28",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-09-29",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-10-06",
+    "quantity": 20.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-10-13",
+    "quantity": 13.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-10-20",
+    "quantity": 13.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-10-27",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Lettuce",
+    "crop_raw": "Lettuce",
+    "unit": "bunch",
+    "date": "2022-11-03",
+    "quantity": 13.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Okra",
+    "crop_raw": "Okra",
+    "unit": "bunch",
+    "date": "2022-08-25",
+    "quantity": 1.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Onions",
+    "crop_raw": "Onions",
+    "unit": "#",
+    "date": "2022-09-15",
+    "quantity": 17.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Peas",
+    "crop_raw": "Peas",
+    "unit": "pint",
+    "date": "2022-06-09",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Peas",
+    "crop_raw": "Peas",
+    "unit": "pint",
+    "date": "2022-06-16",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Peas",
+    "crop_raw": "Peas",
+    "unit": "pint",
+    "date": "2022-06-23",
+    "quantity": 10.5,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Peas",
+    "crop_raw": "Peas",
+    "unit": "pint",
+    "date": "2022-06-30",
+    "quantity": 15.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Peas",
+    "crop_raw": "Peas",
+    "unit": "pint",
+    "date": "2022-07-04",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Peas",
+    "crop_raw": "Peas",
+    "unit": "pint",
+    "date": "2022-07-07",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Peppers",
+    "crop_raw": "Peppers",
+    "unit": "#",
+    "date": "2022-09-08",
+    "quantity": 5.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Peppers",
+    "crop_raw": "Peppers",
+    "unit": "#",
+    "date": "2022-09-29",
+    "quantity": 1.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Peppers",
+    "crop_raw": "Peppers",
+    "unit": "#",
+    "date": "2022-10-13",
+    "quantity": 5.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Peppers",
+    "crop_raw": "Peppers",
+    "unit": "#",
+    "date": "2022-10-20",
+    "quantity": 5.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Radishes",
+    "crop_raw": "Radishes",
+    "unit": "bunch",
+    "date": "2022-06-09",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Radishes",
+    "crop_raw": "Radishes",
+    "unit": "bunch",
+    "date": "2022-06-16",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Radishes",
+    "crop_raw": "Radishes",
+    "unit": "bunch",
+    "date": "2022-06-30",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Radishes",
+    "crop_raw": "Radishes",
+    "unit": "bunch",
+    "date": "2022-10-13",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Radishes",
+    "crop_raw": "Radishes",
+    "unit": "bunch",
+    "date": "2022-10-20",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Rhubarb",
+    "crop_raw": "Rhubarb",
+    "unit": "bunch",
+    "date": "2022-06-09",
+    "quantity": 4.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Rhubarb",
+    "crop_raw": "Rhubarb",
+    "unit": "bunch",
+    "date": "2022-06-16",
+    "quantity": 3.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Rhubarb",
+    "crop_raw": "Rhubarb",
+    "unit": "bunch",
+    "date": "2022-06-23",
+    "quantity": 3.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-07-04",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-07-07",
+    "quantity": 22.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-07-11",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-07-14",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-07-21",
+    "quantity": 22.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-07-28",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-08-04",
+    "quantity": 15.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-08-11",
+    "quantity": 23.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-08-18",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-08-25",
+    "quantity": 17.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-09-01",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-09-08",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-09-15",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-09-28",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-09-29",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-10-06",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-10-13",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Summer Squash",
+    "crop_raw": "Summer Squash",
+    "unit": "#",
+    "date": "2022-10-20",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-06-23",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-06-30",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-07-07",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-07-14",
+    "quantity": 18.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-07-28",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-08-11",
+    "quantity": 15.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-08-18",
+    "quantity": 11.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-08-25",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-09-01",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-09-08",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-09-15",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-09-28",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-09-29",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-10-06",
+    "quantity": 7.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-10-20",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-10-27",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Swiss Chard",
+    "crop_raw": "Swiss Chard",
+    "unit": "bunch",
+    "date": "2022-11-03",
+    "quantity": 16.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tatsoi",
+    "crop_raw": "Tatsoi",
+    "unit": "bunch",
+    "date": "2022-09-08",
+    "quantity": 12.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Tatsoi",
+    "crop_raw": "Tatsoi",
+    "unit": "bunch",
+    "date": "2022-09-15",
+    "quantity": 34.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Tatsoi",
+    "crop_raw": "Tatsoi",
+    "unit": "bunch",
+    "date": "2022-09-28",
+    "quantity": 8.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Tatsoi",
+    "crop_raw": "Tatsoi",
+    "unit": "bunch",
+    "date": "2022-09-29",
+    "quantity": 4.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Tatsoi",
+    "crop_raw": "Tatsoi",
+    "unit": "bunch",
+    "date": "2022-10-06",
+    "quantity": 3.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Tatsoi",
+    "crop_raw": "Tatsoi",
+    "unit": "bunch",
+    "date": "2022-10-27",
+    "quantity": 4.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-07-21",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-07-28",
+    "quantity": 33.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-08-04",
+    "quantity": 64.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-08-11",
+    "quantity": 86.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-08-18",
+    "quantity": 90.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-08-25",
+    "quantity": 151.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-09-01",
+    "quantity": 47.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-09-08",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-09-15",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-09-28",
+    "quantity": 33.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-09-29",
+    "quantity": 30.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-10-06",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-10-13",
+    "quantity": 45.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-10-20",
+    "quantity": 22.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2022-11-03",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad",
+    "unit": "lb",
+    "date": "2022-08-18",
+    "quantity": 62.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad",
+    "unit": "lb",
+    "date": "2022-08-25",
+    "quantity": 23.5,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad",
+    "unit": "lb",
+    "date": "2022-09-29",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, salad/slicer",
+    "crop_raw": "Tomatoes, salad",
+    "unit": "lb",
+    "date": "2022-10-06",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-08-04",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-08-11",
+    "quantity": 44.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-08-18",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-08-25",
+    "quantity": 23.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-09-01",
+    "quantity": 13.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-09-08",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-09-15",
+    "quantity": 18.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-09-28",
+    "quantity": 3.5,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-09-29",
+    "quantity": 6.5,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-10-06",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-10-13",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-10-20",
+    "quantity": 5.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Tomatoes, cherry",
+    "crop_raw": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2022-11-03",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Turnips",
+    "crop_raw": "Turnips",
+    "unit": "bunch",
+    "date": "2022-11-03",
+    "quantity": 3.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Winter Squash",
+    "crop_raw": "Winter Squash",
+    "unit": "#",
+    "date": "2022-09-28",
+    "quantity": 3.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Winter Squash",
+    "crop_raw": "Winter Squash",
+    "unit": "#",
+    "date": "2022-10-20",
+    "quantity": 5.0,
+    "donated": true
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-07-04",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-07-07",
+    "quantity": 9.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-07-11",
+    "quantity": 1.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-07-14",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-07-21",
+    "quantity": 11.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-07-28",
+    "quantity": 14.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-08-04",
+    "quantity": 19.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-08-11",
+    "quantity": 27.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-08-18",
+    "quantity": 12.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-08-25",
+    "quantity": 30.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-09-01",
+    "quantity": 10.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-09-08",
+    "quantity": 8.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-09-15",
+    "quantity": 6.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-09-28",
+    "quantity": 3.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-09-29",
+    "quantity": 2.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-10-13",
+    "quantity": 4.0,
+    "donated": false
+  },
+  {
+    "year": 2022,
+    "crop": "Zucchini",
+    "crop_raw": "Zucchini",
+    "unit": "#",
+    "date": "2022-10-20",
+    "quantity": 2.0,
+    "donated": false
+  }
+]

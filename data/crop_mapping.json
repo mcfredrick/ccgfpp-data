@@ -1,0 +1,8 @@
+{
+  "_comment": "Maps raw crop names (as they appear in a given year's tab) to a canonical crop name used for cross-year totals and charts. Only entries that differ from their raw name need to be listed; anything absent from this file maps to itself. Edit this file directly to adjust groupings.",
+  "Pepper": "Peppers",
+  "Turnips, Japanese": "Turnips",
+  "Cabbage, Napa": "Cabbage",
+  "Tomatoes, salad": "Tomatoes, salad/slicer",
+  "Tomatoes, slicer": "Tomatoes, salad/slicer"
+}
