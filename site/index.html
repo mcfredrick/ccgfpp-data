@@ -203,7 +203,6 @@
     align-items: flex-end;
     justify-content: center;
     gap: 4px;
-    height: 56px;
     margin-top: 10px;
     padding-top: 8px;
     padding-bottom: 16px;
@@ -213,17 +212,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    width: 16px;
-    height: 100%;
+    width: 20px;
+  }
+  /* fixed-height rows, present whether or not this column is the active one --
+     so the value label never crowds a short bar, and every column lines up
+     the same regardless of which one is highlighted */
+  .compare-value-row {
+    height: 12px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 4px;
   }
   .compare-value {
     font-size: 9px;
     font-weight: 700;
     color: var(--text-primary);
-    margin-bottom: 2px;
     font-variant-numeric: tabular-nums;
     white-space: nowrap;
+  }
+  .compare-bar-row {
+    height: 40px;
+    display: flex;
+    align-items: flex-end;
   }
   .compare-bar {
     width: 10px;
@@ -583,15 +593,16 @@
     lanes.forEach(lane => {
       const values = YEARS.map(y => byYear[y][lane.crop] || 0);
       const maxVal = Math.max(...values, 0.0001);
+      const BAR_MAX_PX = 40; // must match .compare-bar-row height
       lane.compareEl.style.setProperty("--bar-color", lane.color);
       lane.compareEl.innerHTML = YEARS.slice().sort((a, b) => a - b).map(y => {
         const val = byYear[y][lane.crop] || 0;
-        const heightPx = Math.max(2, Math.round((val / maxVal) * 44));
+        const heightPx = Math.max(2, Math.round((val / maxVal) * BAR_MAX_PX));
         const active = y === YEAR;
         return `
           <div class="compare-col" title="${y}: ${Math.round(val).toLocaleString()}">
-            ${active ? `<div class="compare-value">${Math.round(val).toLocaleString()}</div>` : ""}
-            <div class="compare-bar${active ? " active" : ""}" style="height:${heightPx}px"></div>
+            <div class="compare-value-row">${active ? `<div class="compare-value">${Math.round(val).toLocaleString()}</div>` : ""}</div>
+            <div class="compare-bar-row"><div class="compare-bar${active ? " active" : ""}" style="height:${heightPx}px"></div></div>
             <div class="compare-year${active ? " active" : ""}">'${String(y).slice(2)}</div>
           </div>
         `;
