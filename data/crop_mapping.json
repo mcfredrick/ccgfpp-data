@@ -1,8 +1,7 @@
 {
-  "_comment": "Maps raw crop names (as they appear in a given year's tab) to a canonical crop name used for cross-year totals and charts. Only entries that differ from their raw name need to be listed; anything absent from this file maps to itself. Edit this file directly to adjust groupings.",
+  "_comment": "Maps raw crop names (as they appear in a given year's tab) to a canonical crop name used for cross-year totals and charts. Only entries that differ from their raw name need to be listed; anything absent from this file maps to itself. Edit this file directly to adjust groupings. NOTE: Tomatoes, slicer and Tomatoes, salad are deliberately NOT merged into one another -- 2022-2024 recorded 'Tomatoes, salad' in lb or pint while 'Tomatoes, slicer' used # (count), and summing those would add incompatible units. 2025's sheet combined them into one row before recording, so that row is attributed to 'Tomatoes, slicer' (the dominant of the two) rather than kept as a separate one-year-only category.",
   "Pepper": "Peppers",
   "Turnips, Japanese": "Turnips",
   "Cabbage, Napa": "Cabbage",
-  "Tomatoes, salad": "Tomatoes, salad/slicer",
-  "Tomatoes, slicer": "Tomatoes, salad/slicer"
+  "Tomatoes, salad/slicer": "Tomatoes, slicer"
 }
