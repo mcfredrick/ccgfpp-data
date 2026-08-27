@@ -194,10 +194,55 @@
   .icon svg { width: 100%; height: 100%; display: block; }
   .lane-name {
     margin-top: 8px;
-    padding-bottom: 16px;
     font-size: 12px;
     color: var(--text-secondary);
     text-align: center;
+  }
+  .compare {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 4px;
+    height: 56px;
+    margin-top: 10px;
+    padding-top: 8px;
+    padding-bottom: 16px;
+    border-top: 1px solid var(--border);
+  }
+  .compare-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 16px;
+    height: 100%;
+  }
+  .compare-value {
+    font-size: 9px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 2px;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  .compare-bar {
+    width: 10px;
+    min-height: 2px;
+    border-radius: 2px 2px 0 0;
+    background: var(--track);
+  }
+  .compare-bar.active {
+    background: var(--bar-color, var(--text-primary));
+  }
+  .compare-year {
+    margin-top: 4px;
+    font-size: 9px;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .compare-year.active {
+    color: var(--text-primary);
+    font-weight: 700;
   }
   .footnote {
     font-size: 12px;
@@ -223,7 +268,7 @@
   </div>
 
   <p class="footnote">
-    Each crop keeps its own recorded unit (bunches, "#", pints) rather than converting to a common measure — 1 icon = 5 units, so pile height is comparable across crops even though the unit differs. Weight/meal-equivalent conversions are planned as a separate, secondary view.
+    Each crop keeps its own recorded unit (bunches, "#", pints) rather than converting to a common measure — 1 icon = 5 units, so pile height is comparable across crops even though the unit differs. Weight/meal-equivalent conversions are planned as a separate, secondary view. The small bars under each pile compare the same calendar window (by month/day, not exact week) across every season in the data — the highlighted bar is the season currently selected above.
   </p>
 </main>
 
@@ -329,6 +374,24 @@
     return totals;
   }
 
+  // "MM-DD" slice, so the same calendar window can be matched across years whose
+  // actual week dates don't line up (2025 starts 6/5, 2022 starts 6/2, etc).
+  const mdKey = dateStr => dateStr.slice(5);
+
+  // For every year, total each crop's quantity within the given month/day window
+  // (inclusive). Used to compare "the same time range" across seasons.
+  function totalsByYearForMdRange(fromMD, toMD) {
+    const byYear = {};
+    YEARS.forEach(y => { byYear[y] = {}; CROPS.forEach(c => byYear[y][c.crop] = 0); });
+    allRecords.forEach(r => {
+      const md = mdKey(r.date);
+      if (md >= fromMD && md <= toMD && byYear[r.year] && byYear[r.year].hasOwnProperty(r.crop)) {
+        byYear[r.year][r.crop] += r.quantity;
+      }
+    });
+    return byYear;
+  }
+
   // ---- physics ----
   const lanes = [];
 
@@ -344,6 +407,7 @@
         <div class="lane-unit" data-unit></div>
         <div class="lane-stage" data-stage></div>
         <div class="lane-name">${c.crop}</div>
+        <div class="compare" data-compare></div>
       `;
       container.appendChild(lane);
       const stageEl = lane.querySelector("[data-stage]");
@@ -354,6 +418,7 @@
         stageEl,
         countEl: lane.querySelector("[data-count]"),
         unitEl: lane.querySelector("[data-unit]"),
+        compareEl: lane.querySelector("[data-compare]"),
         icons: [],
       });
     });
@@ -510,12 +575,37 @@
     return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
   }
 
+  function renderCompare(fromIdx, toIdx) {
+    const fromMD = mdKey(WEEKS[fromIdx]);
+    const toMD = mdKey(WEEKS[toIdx]);
+    const byYear = totalsByYearForMdRange(fromMD, toMD);
+
+    lanes.forEach(lane => {
+      const values = YEARS.map(y => byYear[y][lane.crop] || 0);
+      const maxVal = Math.max(...values, 0.0001);
+      lane.compareEl.style.setProperty("--bar-color", lane.color);
+      lane.compareEl.innerHTML = YEARS.slice().sort((a, b) => a - b).map(y => {
+        const val = byYear[y][lane.crop] || 0;
+        const heightPx = Math.max(2, Math.round((val / maxVal) * 44));
+        const active = y === YEAR;
+        return `
+          <div class="compare-col" title="${y}: ${Math.round(val).toLocaleString()}">
+            ${active ? `<div class="compare-value">${Math.round(val).toLocaleString()}</div>` : ""}
+            <div class="compare-bar${active ? " active" : ""}" style="height:${heightPx}px"></div>
+            <div class="compare-year${active ? " active" : ""}">'${String(y).slice(2)}</div>
+          </div>
+        `;
+      }).join("");
+    });
+  }
+
   function updateFromSliders() {
     let from = parseInt(fromSlider.value, 10);
     let to = parseInt(toSlider.value, 10);
     if (from > to) { [from, to] = [to, from]; }
     rangeLabel.textContent = `${fmt(WEEKS[from])} – ${fmt(WEEKS[to])}, ${YEAR}`;
     triggerDump(from, to);
+    renderCompare(from, to);
   }
 
   function setupYear(year) {
