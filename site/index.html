@@ -63,6 +63,30 @@
     padding: 16px 20px;
     margin-bottom: 16px;
   }
+  .year-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .year-row label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+  }
+  .year-row select {
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    background: var(--page);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 8px;
+    cursor: pointer;
+  }
   .range-label {
     font-size: 13px;
     font-weight: 600;
@@ -222,6 +246,7 @@
   const COLLISION_ITERATIONS = 4;
 
   const appEl = document.getElementById("app");
+  const monthNames = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
   let allRecords;
   try {
@@ -233,46 +258,49 @@
     return;
   }
 
-  // Always show the most recent season in the data -- no hardcoded year, so a
-  // new year's tab just works once it's pulled and parsed (see scripts/parse_sheet.py).
-  const YEAR = Math.max(...allRecords.map(r => r.year));
-  document.getElementById("pageTitle").textContent = `Harvest Piles — ${YEAR}`;
-
-  const yearRecords = allRecords.filter(r => r.year === YEAR);
-  const WEEKS = [...new Set(yearRecords.map(r => r.date))].sort();
-  const RECORDS = yearRecords.filter(r => CROPS.some(c => c.crop === r.crop));
-
-  if (WEEKS.length === 0) {
-    appEl.innerHTML = `<p class="error">No records found for ${YEAR}.</p>`;
+  const YEARS = [...new Set(allRecords.map(r => r.year))].sort((a, b) => b - a);
+  if (YEARS.length === 0) {
+    appEl.innerHTML = `<p class="error">No records found in data/harvests.json.</p>`;
     return;
   }
 
+  // Mutable per-year state, set by setupYear() below.
+  let YEAR, yearRecords, WEEKS, RECORDS;
+
   appEl.innerHTML = `
     <div class="controls">
+      <div class="year-row">
+        <label for="yearSelect">Season</label>
+        <select id="yearSelect">
+          ${YEARS.map(y => `<option value="${y}">${y}</option>`).join("")}
+        </select>
+      </div>
       <div class="range-label" id="rangeLabel"></div>
       <div class="slider-wrap">
-        <input type="range" id="fromSlider" min="0" max="${WEEKS.length - 1}" value="0" step="1" />
-        <input type="range" id="toSlider" min="0" max="${WEEKS.length - 1}" value="${WEEKS.length - 1}" step="1" />
+        <input type="range" id="fromSlider" min="0" max="1" value="0" step="1" />
+        <input type="range" id="toSlider" min="0" max="1" value="1" step="1" />
       </div>
-      <div class="presets" id="presets">
-        <button data-preset="full">Full season</button>
-      </div>
+      <div class="presets" id="presets"></div>
     </div>
     <div class="stage">
       <div class="lanes" id="lanes"></div>
     </div>
   `;
 
-  // month preset buttons, generated from whatever months actually appear this season
-  const months = [...new Set(WEEKS.map(w => new Date(w + "T00:00:00").getMonth() + 1))];
-  const monthNames = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  const yearSelect = document.getElementById("yearSelect");
   const presetsEl = document.getElementById("presets");
-  months.forEach(m => {
-    const btn = document.createElement("button");
-    btn.dataset.preset = String(m);
-    btn.textContent = monthNames[m];
-    presetsEl.appendChild(btn);
-  });
+
+  function rebuildPresets() {
+    presetsEl.innerHTML = `<button data-preset="full">Full season</button>`;
+    // month preset buttons, generated from whatever months actually appear this season
+    const months = [...new Set(WEEKS.map(w => new Date(w + "T00:00:00").getMonth() + 1))];
+    months.forEach(m => {
+      const btn = document.createElement("button");
+      btn.dataset.preset = String(m);
+      btn.textContent = monthNames[m];
+      presetsEl.appendChild(btn);
+    });
+  }
 
   const isDark = () => window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
 
@@ -307,6 +335,7 @@
   function buildLanes() {
     const container = document.getElementById("lanes");
     container.innerHTML = "";
+    lanes.length = 0; // switching years rebuilds lanes -- drop the previous year's entries
     CROPS.forEach(c => {
       const lane = document.createElement("div");
       lane.className = "lane";
@@ -369,7 +398,10 @@
     lanes.forEach(lane => {
       clearLane(lane);
       const total = totals[lane.crop] || 0;
-      const unit = (RECORDS.find(r => r.crop === lane.crop) || {}).unit || "";
+      // fall back to any year's record for the unit label, since a crop can have
+      // zero entries in the selected year (e.g. Peppers wasn't tracked in 2023)
+      const unitSource = RECORDS.find(r => r.crop === lane.crop) || allRecords.find(r => r.crop === lane.crop) || {};
+      const unit = unitSource.unit || "";
       lane.countEl.textContent = Math.round(total).toLocaleString();
       lane.unitEl.textContent = unit;
       lane.iconTarget = Math.max(total > 0 ? 1 : 0, Math.round(total / UNITS_PER_ICON));
@@ -486,6 +518,22 @@
     triggerDump(from, to);
   }
 
+  function setupYear(year) {
+    YEAR = year;
+    document.getElementById("pageTitle").textContent = `Harvest Piles — ${YEAR}`;
+    yearRecords = allRecords.filter(r => r.year === YEAR);
+    WEEKS = [...new Set(yearRecords.map(r => r.date))].sort();
+    RECORDS = yearRecords.filter(r => CROPS.some(c => c.crop === r.crop));
+
+    fromSlider.max = toSlider.max = WEEKS.length - 1;
+    fromSlider.value = 0;
+    toSlider.value = WEEKS.length - 1;
+
+    rebuildPresets();
+    buildLanes();
+    updateFromSliders();
+  }
+
   fromSlider.addEventListener("change", updateFromSliders);
   toSlider.addEventListener("change", updateFromSliders);
 
@@ -507,9 +555,15 @@
     updateFromSliders();
   });
 
-  buildLanes();
+  yearSelect.addEventListener("change", () => {
+    setupYear(parseInt(yearSelect.value, 10));
+  });
+
+  // Default to the most recent season -- no hardcoded year, so a new year's tab
+  // just works once it's pulled and parsed (see scripts/parse_sheet.py).
+  yearSelect.value = String(YEARS[0]);
+  setupYear(YEARS[0]);
   requestAnimationFrame(step);
-  updateFromSliders();
 })();
 </script>
 </body>
