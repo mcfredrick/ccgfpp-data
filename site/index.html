@@ -162,10 +162,12 @@
   }
   .lanes {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 4px;
   }
   .lane {
-    flex: 1;
+    flex: 0 0 130px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -284,13 +286,43 @@
 
 <script>
 (async function () {
-  const CROPS = [
-    { crop: "Tomatoes, salad/slicer", color: "#e34948", darkColor: "#e66767", shape: "tomato" },
-    { crop: "Peppers",                color: "#eb6834", darkColor: "#d95926", shape: "pepper" },
-    { crop: "Lettuce",                color: "#008300", darkColor: "#008300", shape: "lettuce" },
-    { crop: "Zucchini",               color: "#1baf7a", darkColor: "#199e70", shape: "zucchini" },
-    { crop: "Summer Squash",          color: "#eda100", darkColor: "#c98500", shape: "squash" },
-  ];
+  // Hand-picked colors for the crops most people will recognize on sight; everything
+  // else gets a procedurally spaced hue (golden-angle stepping) so N crops always stay
+  // visually distinct without hand-tuning all ~30 of them. Shape is drawn from a small
+  // set of reusable silhouettes -- not every crop gets bespoke art (tracked separately
+  // in site/design-notes.md item 2), but every crop is always identified by its label
+  // regardless of shape/color, so reuse here doesn't cost legibility.
+  const CURATED_VISUALS = {
+    "Tomatoes, salad/slicer": { color: "#e34948", darkColor: "#e66767", shape: "tomato" },
+    "Tomatoes, cherry":       { color: "#d94577", darkColor: "#e0688f", shape: "tomato" },
+    "Summer Squash":          { color: "#eda100", darkColor: "#c98500", shape: "squash" },
+    "Lettuce":                { color: "#008300", darkColor: "#008300", shape: "lettuce" },
+    "Zucchini":               { color: "#1baf7a", darkColor: "#199e70", shape: "zucchini" },
+    "Kale":                   { color: "#2f6b2f", darkColor: "#5ba05b", shape: "lettuce" },
+    "Peppers":                { color: "#eb6834", darkColor: "#d95926", shape: "pepper" },
+    "Swiss Chard":            { color: "#c23b7a", darkColor: "#d5568f", shape: "lettuce" },
+    "Cucumbers":              { color: "#0e7c86", darkColor: "#2ea9b6", shape: "zucchini" },
+    "Carrots":                { color: "#d97706", darkColor: "#f0952c", shape: "zucchini" },
+  };
+
+  const SHAPE_OVERRIDES = {
+    "Bok choy": "lettuce", "Tatsoi": "lettuce", "Gai lan": "lettuce",
+    "Greens, mixed": "lettuce", "Parsley": "lettuce",
+    "Green beans": "zucchini", "Daikon radish": "zucchini", "Garlic scapes": "zucchini",
+    "Corn": "zucchini", "Rhubarb": "zucchini", "Okra": "zucchini",
+    "Winter Squash": "squash", "Eggplant": "squash",
+  };
+
+  function goldenAngleColor(index) {
+    const hue = Math.round((index * 137.508 + 40) % 360);
+    return { color: `hsl(${hue}, 58%, 40%)`, darkColor: `hsl(${hue}, 55%, 62%)` };
+  }
+
+  function cropVisual(crop, orderIndex) {
+    if (CURATED_VISUALS[crop]) return CURATED_VISUALS[crop];
+    const shape = SHAPE_OVERRIDES[crop] || "round";
+    return { shape, ...goldenAngleColor(orderIndex) };
+  }
 
   const UNITS_PER_ICON = 5;
   const GRAVITY = 0.6;
@@ -298,7 +330,24 @@
   const SPAWN_INTERVAL_MS = 18;
   const SLEEP_DISP = 0.05;
   const SLEEP_FRAMES = 10;
-  const COLLISION_ITERATIONS = 4;
+  const COLLISION_ITERATIONS = 8;
+  const MAX_ICON_RADIUS = 9;
+  const MIN_ICON_RADIUS = 4;
+  // Caps the implied Verlet velocity from a single frame's overlap correction --
+  // without this, a densely packed lane (many icons, narrow width) can chain
+  // several large corrections in one frame and launch an icon off-screen instead
+  // of settling. Found via a headless stress test at 146 icons / 130px width.
+  const MAX_SPEED = 12;
+
+  // Shrinks icon radius as a lane's icon count grows, so a big pile still fits the
+  // stage instead of overflowing past its edges. 0.7 approximates achievable
+  // circle-packing density; clamped to keep icons from ever going illegibly small.
+  function radiusForCount(count, width, height) {
+    if (count <= 0) return MAX_ICON_RADIUS;
+    const usableArea = width * height * 0.7;
+    const r = Math.sqrt(usableArea / (count * Math.PI));
+    return Math.max(MIN_ICON_RADIUS, Math.min(MAX_ICON_RADIUS, r));
+  }
 
   const appEl = document.getElementById("app");
   const monthNames = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -319,8 +368,16 @@
     return;
   }
 
+  // Stable crop order (all-time volume, biggest first) so a crop's position and
+  // auto-generated color stay consistent across year switches. Computed once from
+  // whatever crop names actually exist in the data -- a brand-new crop next season
+  // just falls into this list automatically, no code change needed.
+  const cropTotals = {};
+  allRecords.forEach(r => { cropTotals[r.crop] = (cropTotals[r.crop] || 0) + r.quantity; });
+  const GLOBAL_CROP_ORDER = Object.keys(cropTotals).sort((a, b) => cropTotals[b] - cropTotals[a]);
+
   // Mutable per-year state, set by setupYear() below.
-  let YEAR, yearRecords, WEEKS, RECORDS;
+  let YEAR, yearRecords, WEEKS, RECORDS, CROPS;
 
   appEl.innerHTML = `
     <div class="controls">
@@ -365,6 +422,7 @@
     lettuce: '<path d="M12 20c-4.5 0-8-3.2-8-7.8C4 8.3 7.6 4 12 4s8 4.3 8 8.2C20 16.8 16.5 20 12 20z" /><path d="M12 20V6M8 18l-2-9M16 18l2-9M9.5 19l-3-11M14.5 19l3-11" stroke="var(--surface-1)" stroke-width="0.8" fill="none" opacity="0.5" />',
     zucchini: '<rect x="3" y="10" width="18" height="6" rx="3" transform="rotate(-8 12 13)" />',
     squash: '<path d="M12 5c1 0 1.6.9 1.6 2 0 .6-.2 1-.2 1 3.6.5 6.6 3.4 6.6 7.3 0 3.6-3 6.7-8 6.7s-8-3.1-8-6.7c0-3.9 3-6.8 6.6-7.3 0 0-.2-.4-.2-1 0-1.1.6-2 1.6-2z" />',
+    round: '<circle cx="12" cy="12" r="9" />',
   };
 
   function svgFor(shape, color) {
@@ -480,6 +538,7 @@
       lane.countEl.textContent = Math.round(total).toLocaleString();
       lane.unitEl.textContent = unit;
       lane.iconTarget = Math.max(total > 0 ? 1 : 0, Math.round(total / UNITS_PER_ICON));
+      lane.iconRadius = radiusForCount(lane.iconTarget, lane.stageEl.clientWidth, lane.stageEl.clientHeight);
     });
 
     if (spawnTimer) clearInterval(spawnTimer);
@@ -488,7 +547,7 @@
       let anyLeft = false;
       spawnQueue.forEach(q => {
         if (q.remaining > 0) {
-          spawnIcon(q.lane, 9);
+          spawnIcon(q.lane, q.lane.iconRadius);
           q.remaining--;
           anyLeft = true;
         }
@@ -509,8 +568,10 @@
       // bookkeeping to fall out of sync with the corrections below.
       icons.forEach(icon => {
         if (icon.asleep) return;
-        const vx = (icon.x - icon.oldX) * DAMPING;
-        const vy = (icon.y - icon.oldY) * DAMPING;
+        let vx = (icon.x - icon.oldX) * DAMPING;
+        let vy = (icon.y - icon.oldY) * DAMPING;
+        const speed = Math.hypot(vx, vy);
+        if (speed > MAX_SPEED) { vx = (vx / speed) * MAX_SPEED; vy = (vy / speed) * MAX_SPEED; }
         icon.oldX = icon.x;
         icon.oldY = icon.y;
         icon.x += vx;
@@ -624,6 +685,12 @@
     document.getElementById("pageTitle").textContent = `Harvest Piles — ${YEAR}`;
     yearRecords = allRecords.filter(r => r.year === YEAR);
     WEEKS = [...new Set(yearRecords.map(r => r.date))].sort();
+
+    const cropsPresentThisYear = new Set(yearRecords.map(r => r.crop));
+    CROPS = GLOBAL_CROP_ORDER
+      .filter(crop => cropsPresentThisYear.has(crop))
+      .map(crop => ({ crop, ...cropVisual(crop, GLOBAL_CROP_ORDER.indexOf(crop)) }));
+
     RECORDS = yearRecords.filter(r => CROPS.some(c => c.crop === r.crop));
 
     fromSlider.max = toSlider.max = WEEKS.length - 1;
