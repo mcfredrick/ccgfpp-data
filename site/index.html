@@ -66,8 +66,12 @@
   .year-row {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 14px;
+  }
+  .year-row label:not(:first-child) {
+    margin-left: 8px;
   }
   .year-row label {
     font-size: 12px;
@@ -256,6 +260,25 @@
     color: var(--text-primary);
     font-weight: 700;
   }
+  .compare-divider {
+    align-self: stretch;
+    width: 1px;
+    background: var(--border);
+    margin: 0 2px;
+  }
+  /* the average column is a computed statistic, not an actual season -- hollow
+     bar + italic label mark it as visually distinct from the real per-year bars */
+  .compare-bar.avg {
+    background: transparent;
+    border: 2px solid var(--bar-color, var(--text-muted));
+    box-sizing: border-box;
+  }
+  .compare-value.avg {
+    color: var(--text-secondary);
+  }
+  .compare-year.avg {
+    font-style: italic;
+  }
   .footnote {
     font-size: 12px;
     color: var(--text-muted);
@@ -280,7 +303,7 @@
   </div>
 
   <p class="footnote">
-    Each crop keeps its own recorded unit (bunches, "#", pints) rather than converting to a common measure — 1 icon = 5 units, so pile height is comparable across crops even though the unit differs. Weight/meal-equivalent conversions are planned as a separate, secondary view. The small bars under each pile compare the same calendar window (by month/day, not exact week) across every season in the data — the highlighted bar is the season currently selected above.
+    Each crop keeps its own recorded unit (bunches, "#", pints) rather than converting to a common measure — 1 icon = 5 units, so pile height is comparable across crops even though the unit differs. Weight/meal-equivalent conversions are planned as a separate, secondary view. The small bars under each pile compare the same calendar window (by month/day, not exact week) across every season in the data — the highlighted bar is the season currently selected above, and the hollow italic "avg" bar is the mean across every season for that same window. Use the "Week" dropdown to jump straight to a single week.
   </p>
 </main>
 
@@ -387,6 +410,8 @@
         <select id="yearSelect">
           ${YEARS.map(y => `<option value="${y}">${y}</option>`).join("")}
         </select>
+        <label for="weekSelect">Week</label>
+        <select id="weekSelect"><option value="">Jump to a week&hellip;</option></select>
       </div>
       <div class="range-label" id="rangeLabel"></div>
       <div class="slider-wrap">
@@ -401,6 +426,7 @@
   `;
 
   const yearSelect = document.getElementById("yearSelect");
+  const weekSelect = document.getElementById("weekSelect");
   const presetsEl = document.getElementById("presets");
 
   function rebuildPresets() {
@@ -647,6 +673,15 @@
     return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
   }
 
+  // averages are often fractional (e.g. 1.5 units/season) -- show one decimal only
+  // when it's not a whole number, rather than always rounding it away
+  function fmtAvg(n) {
+    const rounded = Math.round(n * 10) / 10;
+    return rounded % 1 === 0
+      ? rounded.toLocaleString()
+      : rounded.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+  }
+
   function renderCompare(fromIdx, toIdx) {
     const fromMD = mdKey(WEEKS[fromIdx]);
     const toMD = mdKey(WEEKS[toIdx]);
@@ -654,10 +689,12 @@
 
     lanes.forEach(lane => {
       const values = YEARS.map(y => byYear[y][lane.crop] || 0);
-      const maxVal = Math.max(...values, 0.0001);
+      const avgVal = values.reduce((a, b) => a + b, 0) / values.length;
+      const maxVal = Math.max(...values, avgVal, 0.0001);
       const BAR_MAX_PX = 40; // must match .compare-bar-row height
       lane.compareEl.style.setProperty("--bar-color", lane.color);
-      lane.compareEl.innerHTML = YEARS.slice().sort((a, b) => a - b).map(y => {
+
+      const yearCols = YEARS.slice().sort((a, b) => a - b).map(y => {
         const val = byYear[y][lane.crop] || 0;
         const heightPx = Math.max(2, Math.round((val / maxVal) * BAR_MAX_PX));
         const active = y === YEAR;
@@ -669,6 +706,17 @@
           </div>
         `;
       }).join("");
+
+      const avgHeightPx = Math.max(2, Math.round((avgVal / maxVal) * BAR_MAX_PX));
+      const avgCol = `
+        <div class="compare-col" title="${YEARS.length}-season average: ${fmtAvg(avgVal)}">
+          <div class="compare-value-row"><div class="compare-value avg">${fmtAvg(avgVal)}</div></div>
+          <div class="compare-bar-row"><div class="compare-bar avg" style="height:${avgHeightPx}px"></div></div>
+          <div class="compare-year avg">avg</div>
+        </div>
+      `;
+
+      lane.compareEl.innerHTML = yearCols + `<div class="compare-divider"></div>` + avgCol;
     });
   }
 
@@ -679,6 +727,10 @@
     rangeLabel.textContent = `${fmt(WEEKS[from])} – ${fmt(WEEKS[to])}, ${YEAR}`;
     triggerDump(from, to);
     renderCompare(from, to);
+    // keep the week dropdown in sync -- shows a specific week only when the range
+    // actually IS a single week, and resets to the placeholder otherwise (a custom
+    // drag or a month preset no longer corresponds to one week's selection)
+    weekSelect.value = from === to ? String(from) : "";
   }
 
   function setupYear(year) {
@@ -697,6 +749,9 @@
     fromSlider.max = toSlider.max = WEEKS.length - 1;
     fromSlider.value = 0;
     toSlider.value = WEEKS.length - 1;
+
+    weekSelect.innerHTML = `<option value="">Jump to a week&hellip;</option>` +
+      WEEKS.map((w, i) => `<option value="${i}">Week of ${fmt(w)}</option>`).join("");
 
     rebuildPresets();
     buildLanes();
@@ -726,6 +781,14 @@
 
   yearSelect.addEventListener("change", () => {
     setupYear(parseInt(yearSelect.value, 10));
+  });
+
+  weekSelect.addEventListener("change", () => {
+    if (weekSelect.value === "") return;
+    const idx = parseInt(weekSelect.value, 10);
+    fromSlider.value = idx;
+    toSlider.value = idx;
+    updateFromSliders();
   });
 
   // Default to the most recent season -- no hardcoded year, so a new year's tab
