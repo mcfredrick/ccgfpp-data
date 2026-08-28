@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Parse the Food Pantry Plot xlsx export into tidy long-format records.
+"""HISTORICAL / ONE-TIME MIGRATION TOOL. Airtable is the source of truth going
+forward (see scripts/pull_airtable.py) -- this script is what originally
+turned the 2022-2025 Google Sheet into tidy data before that migration, and
+is kept for the record, not run as part of the regular pipeline anymore.
+
+Parse the Food Pantry Plot xlsx export into tidy long-format records.
 
 Input:  data/raw/*.xlsx  (native Sheets export via Drive download_file_content,
         exportMimeType=application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)

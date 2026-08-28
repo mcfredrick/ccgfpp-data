@@ -39,7 +39,8 @@ contained by the wooden rails rather than the page background.
 
 ## 6. Full email-driven update loop, with auto-reply
 Ideal flow: CC a dedicated address on the existing weekly totals email -> it gets
-parsed -> the copy sheet updates -> the live site regenerates -> an auto-reply goes
+parsed -> Airtable updates (now the source of truth, replacing the earlier
+copy-of-the-Google-Sheet plan) -> the live site regenerates -> an auto-reply goes
 back to everyone CC'ed with a weekly visual. This is the full version of the
 "weekly manual update" MVP step, with two new pieces beyond what was already
 planned: (a) a real inbound-mail trigger (a dedicated Gmail address + Apps Script/
