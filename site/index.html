@@ -352,9 +352,16 @@
   const GRAVITY = 0.6;
   const DAMPING = 0.98;
   const SPAWN_INTERVAL_MS = 18;
-  const SLEEP_DISP = 0.05;
-  const SLEEP_FRAMES = 10;
+  const SLEEP_DISP = 0.1;
+  const SLEEP_FRAMES = 15;
   const COLLISION_ITERATIONS = 8;
+  // Safety valve: in a tightly packed pile a small fraction of icons can settle
+  // into a persistent low-amplitude oscillation that never quite drops below
+  // SLEEP_DISP (a known edge case of iterative position-based collision solving).
+  // Force sleep after this many awake frames regardless, so nothing bounces
+  // forever -- ~15s at 60fps, generous enough that it never cuts off a pile that's
+  // still genuinely settling.
+  const MAX_AWAKE_FRAMES = 900;
   const MAX_ICON_RADIUS = 9;
   const MIN_ICON_RADIUS = 4;
   // Caps the implied Verlet velocity from a single frame's overlap correction --
@@ -519,6 +526,39 @@
     });
   }
 
+  // Biasing *where icons spawn* toward the center isn't enough on its own -- with
+  // zero friction, any lateral jostling cascades sideways until something hits a
+  // wall, which erases most of a one-shot spawn bias over the course of a pile
+  // forming (verified experimentally: a pure Gaussian spawn distribution still
+  // settled into an almost-flat silhouette). Instead we actively allocate spawn
+  // positions across a fixed number of buckets using a largest-remainder method
+  // against a target bell-curve profile, so the actual *count* distribution
+  // matches the target regardless of how the physics plays out afterward.
+  const BUCKET_COUNT = 8;
+  const BUCKET_WEIGHTS = (() => {
+    const std = BUCKET_COUNT / 4;
+    const centerBin = (BUCKET_COUNT - 1) / 2;
+    const weights = [];
+    let sum = 0;
+    for (let i = 0; i < BUCKET_COUNT; i++) {
+      const w = Math.exp(-0.5 * ((i - centerBin) / std) ** 2);
+      weights.push(w);
+      sum += w;
+    }
+    return weights.map(w => w / sum);
+  })();
+
+  function pickSpawnBin(lane) {
+    let bestBin = 0, bestDeficit = -Infinity;
+    for (let i = 0; i < BUCKET_COUNT; i++) {
+      const deficit = BUCKET_WEIGHTS[i] * (lane.totalSpawned + 1) - lane.spawnedPerBin[i];
+      if (deficit > bestDeficit) { bestDeficit = deficit; bestBin = i; }
+    }
+    lane.spawnedPerBin[bestBin]++;
+    lane.totalSpawned++;
+    return bestBin;
+  }
+
   function spawnIcon(lane, radius) {
     const width = lane.stageEl.clientWidth;
     const el = document.createElement("div");
@@ -526,11 +566,14 @@
     el.style.width = el.style.height = radius * 2 + "px";
     el.innerHTML = svgFor(lane.shape, lane.color);
     lane.stageEl.appendChild(el);
-    // average of 3 uniform samples biases spawn x toward lane center (Irwin-Hall-ish),
-    // so piles mound in the middle instead of avalanching toward the edges
-    const usable = width - radius * 2;
-    const centered = (Math.random() + Math.random() + Math.random()) / 3;
-    const x = radius + centered * usable;
+
+    const bin = pickSpawnBin(lane);
+    const binWidth = width / BUCKET_COUNT;
+    const margin = radius + 1;
+    const binLo = Math.max(margin, bin * binWidth);
+    const binHi = Math.min(width - margin, (bin + 1) * binWidth);
+    const x = binHi > binLo ? binLo + Math.random() * (binHi - binLo) : width / 2;
+
     const y = -radius * 2 - Math.random() * 40;
     const icon = {
       el,
@@ -541,6 +584,16 @@
       oldY: y,
       stillFrames: 0,
       asleep: false,
+      // fixed per-icon offset from the wall, used only in the main per-frame wall
+      // clamp (see step()) -- without this, every icon that touches a wall snaps
+      // to the exact same x, which is what built the rigid vertical towers at the
+      // edges instead of a natural sloped pile edge. The mid-solve safety re-clamp
+      // during collision resolution deliberately does NOT use this jitter (kept a
+      // plain hard clamp there) -- jittering both was tested and measurably hurt
+      // settling, apparently by giving the wall constraint and the collision
+      // constraint two different targets to fight over mid-solve.
+      wallJitter: Math.random() * Math.min(4, radius * 0.6),
+      awakeFrames: 0,
     };
     lane.icons.push(icon);
   }
@@ -548,6 +601,8 @@
   function clearLane(lane) {
     lane.stageEl.innerHTML = "";
     lane.icons = [];
+    lane.spawnedPerBin = new Array(BUCKET_COUNT).fill(0);
+    lane.totalSpawned = 0;
   }
 
   let spawnQueue = [];
@@ -604,8 +659,8 @@
         icon.x += vx;
         icon.y += vy + GRAVITY;
 
-        if (icon.x - icon.r < 0) icon.x = icon.r;
-        if (icon.x + icon.r > width) icon.x = width - icon.r;
+        if (icon.x - icon.r < 0) icon.x = icon.r + icon.wallJitter;
+        if (icon.x + icon.r > width) icon.x = width - icon.r - icon.wallJitter;
         if (icon.y + icon.r > height) icon.y = height - icon.r;
       });
 
@@ -627,9 +682,22 @@
               } else if (b.asleep) {
                 a.x -= nx * overlap; a.y -= ny * overlap;
               } else {
-                a.x -= nx * overlap / 2; a.y -= ny * overlap / 2;
-                b.x += nx * overlap / 2; b.y += ny * overlap / 2;
+                // the more-settled icon (higher stillFrames) resists being pushed;
+                // the less-settled one absorbs more of the correction. Without this,
+                // freshly-falling icons push already-placed ones around just as
+                // easily as each other, which lets new arrivals cascade earlier
+                // material sideways and erase the spawn-time bell-curve bias --
+                // confirmed experimentally: bin heights were nearly flat without
+                // this weighting, clearly tapered toward the edges with it.
+                const aWeight = a.stillFrames + 1, bWeight = b.stillFrames + 1;
+                const aShare = bWeight / (aWeight + bWeight);
+                const bShare = aWeight / (aWeight + bWeight);
+                a.x -= nx * overlap * aShare; a.y -= ny * overlap * aShare;
+                b.x += nx * overlap * bShare; b.y += ny * overlap * bShare;
               }
+              // plain hard clamp here (no wallJitter) -- this is a mid-solve safety
+              // net, not the primary resting-position determinant; see the comment
+              // on wallJitter's declaration for why jittering both was worse
               if (a.x - a.r < 0) a.x = a.r;
               if (a.x + a.r > width) a.x = width - a.r;
               if (a.y + a.r > height) a.y = height - a.r;
@@ -643,17 +711,18 @@
 
       icons.forEach(icon => {
         if (icon.asleep) return;
+        icon.awakeFrames++;
         const disp = Math.hypot(icon.x - icon.oldX, icon.y - icon.oldY);
         if (disp < SLEEP_DISP) {
           icon.stillFrames++;
           if (icon.stillFrames > SLEEP_FRAMES) {
             icon.asleep = true;
-            icon.oldX = icon.x;
-            icon.oldY = icon.y;
           }
         } else {
           icon.stillFrames = 0;
         }
+        if (icon.awakeFrames > MAX_AWAKE_FRAMES) icon.asleep = true;
+        if (icon.asleep) { icon.oldX = icon.x; icon.oldY = icon.y; }
       });
 
       icons.forEach(icon => {
