@@ -59,3 +59,14 @@ gallery UI wired to the same range-selector state the pile chart uses. Mostly
 straightforward once photos are actually being collected somewhere — the collection
 mechanism is the part that depends on item 6 (or, in the MVP-manual version, on
 you dropping photos in a folder alongside the pasted weekly totals).
+
+## 8. Custom weekly data-entry page for non-technical volunteers
+Airtable's raw grid isn't as intuitive as the old Google Sheet for volunteers who
+don't want to deal with a database-y UI, and Airtable has no editable pivot/wide
+view to fall back on (pivot tables in Airtable are read-only analysis, and gated
+to the Teams plan besides -- confirmed, not just assumed). A small custom web
+page matching the real workflow (pick the date once, add several crop/quantity/
+unit rows for that week, submit once) would fit better than either the old wide
+sheet or Airtable's native Grid/Form views, and writes straight to Airtable's API.
+Airtable's native Form view is a free, zero-code fallback worth knowing about
+too, though it's one submission per crop rather than a whole week at once.
