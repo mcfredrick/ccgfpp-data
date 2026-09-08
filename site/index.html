@@ -184,6 +184,11 @@
   .lane-unit {
     font-size: 11px;
     color: var(--text-muted);
+  }
+  .lane-season-total {
+    font-size: 10px;
+    color: var(--text-muted);
+    font-style: italic;
     margin-bottom: 8px;
   }
   .lane-stage {
@@ -507,6 +512,7 @@
       lane.innerHTML = `
         <div class="lane-count" data-count>0</div>
         <div class="lane-unit" data-unit></div>
+        <div class="lane-season-total" data-season-total></div>
         <div class="lane-stage" data-stage></div>
         <div class="lane-name">${c.crop}</div>
         <div class="compare" data-compare></div>
@@ -520,6 +526,7 @@
         stageEl,
         countEl: lane.querySelector("[data-count]"),
         unitEl: lane.querySelector("[data-unit]"),
+        seasonTotalEl: lane.querySelector("[data-season-total]"),
         compareEl: lane.querySelector("[data-compare]"),
         icons: [],
       });
@@ -751,6 +758,20 @@
       : rounded.toLocaleString(undefined, { minimumFractionDigits: 1, maximumFractionDigits: 1 });
   }
 
+  // The full season's total per crop, independent of whatever sub-range the
+  // sliders currently select -- always visible so "how much have we donated
+  // this season" never requires clicking "Full season" to find out.
+  function renderSeasonTotals() {
+    const totals = {};
+    CROPS.forEach(c => totals[c.crop] = 0);
+    yearRecords.forEach(r => {
+      if (totals.hasOwnProperty(r.crop)) totals[r.crop] += r.quantity;
+    });
+    lanes.forEach(lane => {
+      lane.seasonTotalEl.textContent = `${Math.round(totals[lane.crop] || 0).toLocaleString()} season total`;
+    });
+  }
+
   function renderCompare(fromIdx, toIdx) {
     const fromMD = mdKey(WEEKS[fromIdx]);
     const toMD = mdKey(WEEKS[toIdx]);
@@ -815,9 +836,28 @@
 
     RECORDS = yearRecords.filter(r => CROPS.some(c => c.crop === r.crop));
 
+    // Default to "this week" (real calendar date) when viewing the current season,
+    // even if nothing's been entered for it yet -- the comparison strip still shows
+    // what to roughly expect from prior seasons' same week. Add two synthetic
+    // boundary dates (today, and 6 days back) to WEEKS so they have valid slider
+    // positions even without a real record there; every render path already reads
+    // dates via WEEKS[idx], so this needs no other changes. Past seasons keep
+    // defaulting to the full season, which is what you want when browsing history.
+    const now = new Date();
+    const isCurrentSeason = year === now.getFullYear();
+    let defaultFromIdx = 0;
+    let defaultToIdx = WEEKS.length - 1;
+    if (isCurrentSeason) {
+      const toIso = now.toISOString().slice(0, 10);
+      const fromIso = new Date(now.getTime() - 6 * 86400000).toISOString().slice(0, 10);
+      WEEKS = [...new Set([...WEEKS, fromIso, toIso])].sort();
+      defaultFromIdx = WEEKS.indexOf(fromIso);
+      defaultToIdx = WEEKS.indexOf(toIso);
+    }
+
     fromSlider.max = toSlider.max = WEEKS.length - 1;
-    fromSlider.value = 0;
-    toSlider.value = WEEKS.length - 1;
+    fromSlider.value = defaultFromIdx;
+    toSlider.value = defaultToIdx;
 
     weekSelect.innerHTML = `<option value="">Jump to a week&hellip;</option>` +
       WEEKS.map((w, i) => `<option value="${i}">Week of ${fmt(w)}</option>`).join("");
@@ -825,6 +865,7 @@
     rebuildPresets();
     buildLanes();
     updateFromSliders();
+    renderSeasonTotals();
   }
 
   fromSlider.addEventListener("change", updateFromSliders);
