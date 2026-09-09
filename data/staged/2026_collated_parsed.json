@@ -1,0 +1,965 @@
+[
+  {
+    "date": "2026-06-11",
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "quantity": 3.0,
+    "donated": false,
+    "notes": "baby",
+    "source_line": "3 baby kale"
+  },
+  {
+    "date": "2026-06-11",
+    "crop": "Garlic scapes",
+    "unit": "bags/bunches",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "1 scapes"
+  },
+  {
+    "date": "2026-06-11",
+    "crop": "Mesclun Mix",
+    "unit": "bags/bunches",
+    "quantity": 6.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "6 mesclun mix"
+  },
+  {
+    "date": "2026-06-11",
+    "crop": "Collards",
+    "unit": "bags/bunches",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "1 collards"
+  },
+  {
+    "date": "2026-06-11",
+    "crop": "Cilantro",
+    "unit": "bags/bunches",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "1 cilantro"
+  },
+  {
+    "date": "2026-06-24",
+    "crop": "Radishes",
+    "unit": "bags/bunches",
+    "quantity": 3.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "3 bags radishes"
+  },
+  {
+    "date": "2026-06-24",
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "quantity": 7.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "7 bags lettuce"
+  },
+  {
+    "date": "2026-06-24",
+    "crop": "Garlic scapes",
+    "unit": "bags/bunches",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "1 large bag scapes"
+  },
+  {
+    "date": "2026-07-02",
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "quantity": 14.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "14 bags lettuce"
+  },
+  {
+    "date": "2026-07-02",
+    "crop": "Turnips",
+    "unit": "bags/bunches",
+    "quantity": 2.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "2 bags turnips"
+  },
+  {
+    "date": "2026-07-02",
+    "crop": "Peas",
+    "unit": "pint",
+    "quantity": 9.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "9 pt peas"
+  },
+  {
+    "date": "2026-07-02",
+    "crop": "Summer Squash",
+    "unit": "#",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "1 summer squash"
+  },
+  {
+    "date": "2026-07-09",
+    "crop": "Peas",
+    "unit": "pint",
+    "quantity": 8.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "8 pt peas"
+  },
+  {
+    "date": "2026-07-09",
+    "crop": "Zucchini",
+    "unit": "#",
+    "quantity": 7.0,
+    "donated": true,
+    "notes": "",
+    "source_line": "7 zukes. (Donated)"
+  },
+  {
+    "date": "2026-07-09",
+    "crop": "Summer Squash",
+    "unit": "#",
+    "quantity": 1.0,
+    "donated": true,
+    "notes": "yellow squash",
+    "source_line": "1 yellow squash (donated)"
+  },
+  {
+    "date": "2026-07-09",
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "quantity": 6.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "6 bags lettuce"
+  },
+  {
+    "date": "2026-07-09",
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "quantity": 3.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "3 bags kale"
+  },
+  {
+    "date": "2026-07-16",
+    "crop": "Summer Squash",
+    "unit": "#",
+    "quantity": 5.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "5 summer squashes"
+  },
+  {
+    "date": "2026-07-16",
+    "crop": "Zucchini",
+    "unit": "#",
+    "quantity": 6.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "6 zucchinis"
+  },
+  {
+    "date": "2026-07-16",
+    "crop": "Cucumbers",
+    "unit": "#",
+    "quantity": 4.0,
+    "donated": true,
+    "notes": "yellow cucumbers",
+    "source_line": "4 yellow cucumbers (by anonymous doner)"
+  },
+  {
+    "date": "2026-07-16",
+    "crop": "Peas",
+    "unit": "lb",
+    "quantity": 4.0,
+    "donated": false,
+    "notes": "snap peas",
+    "source_line": "4 pound snap peas"
+  },
+  {
+    "date": "2026-07-16",
+    "crop": "Green beans",
+    "unit": "lb",
+    "quantity": 0.5,
+    "donated": false,
+    "notes": "",
+    "source_line": "1/2 pound green beans"
+  },
+  {
+    "date": "2026-07-16",
+    "crop": "Lettuce",
+    "unit": "head",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "1 head of lettuce"
+  },
+  {
+    "date": "2026-07-16",
+    "crop": "Kale",
+    "unit": "lb",
+    "quantity": 4.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "4 pound kale"
+  },
+  {
+    "date": "2026-07-16",
+    "crop": "Swiss Chard",
+    "unit": "lb",
+    "quantity": 5.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "5 pound Swiss chard"
+  },
+  {
+    "date": "2026-07-16",
+    "crop": "Beets",
+    "unit": "bags/bunches",
+    "quantity": 5.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "5 beets"
+  },
+  {
+    "date": "2026-07-16",
+    "crop": "Tomatoes, cherry",
+    "unit": "bags/bunches",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "handful (approximate)",
+    "source_line": "a handful of cherry tomatoes"
+  },
+  {
+    "date": "2026-07-22",
+    "crop": "Summer Squash",
+    "unit": "#",
+    "quantity": 40.0,
+    "donated": false,
+    "notes": "yellow squash",
+    "source_line": "40 yellow squash"
+  },
+  {
+    "date": "2026-07-22",
+    "crop": "Zucchini",
+    "unit": "#",
+    "quantity": 18.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "18 zucchini"
+  },
+  {
+    "date": "2026-07-22",
+    "crop": "Green beans",
+    "unit": "lb",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "1 lb green beans"
+  },
+  {
+    "date": "2026-07-22",
+    "crop": "Beets",
+    "unit": "bags/bunches",
+    "quantity": 3.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "3 bags Beets"
+  },
+  {
+    "date": "2026-07-22",
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "quantity": 7.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "7 tomatoes"
+  },
+  {
+    "date": "2026-07-22",
+    "crop": "Swiss Chard",
+    "unit": "bags/bunches",
+    "quantity": 2.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "2 bags chard"
+  },
+  {
+    "date": "2026-07-22",
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "quantity": 2.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "2 bags kale"
+  },
+  {
+    "date": "2026-07-22",
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "quantity": 8.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "8 Bags lettuce"
+  },
+  {
+    "date": "2026-07-30",
+    "crop": "Summer Squash",
+    "unit": "#",
+    "quantity": 20.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "20 summer squashes"
+  },
+  {
+    "date": "2026-07-30",
+    "crop": "Zucchini",
+    "unit": "#",
+    "quantity": 18.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "18 zucchinis"
+  },
+  {
+    "date": "2026-07-30",
+    "crop": "Green beans",
+    "unit": "bags/bunches",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "1 bag of green beans"
+  },
+  {
+    "date": "2026-07-30",
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "quantity": 6.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "6 bags of kale"
+  },
+  {
+    "date": "2026-07-30",
+    "crop": "Swiss Chard",
+    "unit": "bags/bunches",
+    "quantity": 5.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "5 bags of Swiss chard"
+  },
+  {
+    "date": "2026-07-30",
+    "crop": "Hot Peppers",
+    "unit": "#",
+    "quantity": 2.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "2 hot peppers"
+  },
+  {
+    "date": "2026-07-30",
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "quantity": 11.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "11 tomatoes"
+  },
+  {
+    "date": "2026-08-05",
+    "crop": "Beets",
+    "unit": "bags/bunches",
+    "quantity": 3.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "3 beet"
+  },
+  {
+    "date": "2026-08-05",
+    "crop": "Zucchini",
+    "unit": "#",
+    "quantity": 36.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "36 zucchini"
+  },
+  {
+    "date": "2026-08-05",
+    "crop": "Summer Squash",
+    "unit": "#",
+    "quantity": 42.0,
+    "donated": false,
+    "notes": "crookneck",
+    "source_line": "42 crooknecks"
+  },
+  {
+    "date": "2026-08-05",
+    "crop": "Swiss Chard",
+    "unit": "bags/bunches",
+    "quantity": 4.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "4 chard"
+  },
+  {
+    "date": "2026-08-05",
+    "crop": "Hot Peppers",
+    "unit": "bags/bunches",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "1 bag jalape\u00f1o"
+  },
+  {
+    "date": "2026-08-05",
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "quantity": 4.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "4 kale"
+  },
+  {
+    "date": "2026-08-05",
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "quantity": 2.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "2 lettuce"
+  },
+  {
+    "date": "2026-08-05",
+    "crop": "Green beans",
+    "unit": "bags/bunches",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "1 bag green beans"
+  },
+  {
+    "date": "2026-08-05",
+    "crop": "Tomatoes, slicer",
+    "unit": "pint",
+    "quantity": 2.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "2 pint tomatoes"
+  },
+  {
+    "date": "2026-08-05",
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "quantity": 2.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "2 pint cherry"
+  },
+  {
+    "date": "2026-08-05",
+    "crop": "Peppers",
+    "unit": "#",
+    "quantity": 4.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "4 bell pepper"
+  },
+  {
+    "date": "2026-08-13",
+    "crop": "Summer Squash",
+    "unit": "#",
+    "quantity": 29.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "29 Squash"
+  },
+  {
+    "date": "2026-08-13",
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "quantity": 24.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "24 pints Cherry tomatoes"
+  },
+  {
+    "date": "2026-08-13",
+    "crop": "Carrots",
+    "unit": "bags/bunches",
+    "quantity": 3.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "3 bags Carrots"
+  },
+  {
+    "date": "2026-08-13",
+    "crop": "Swiss Chard",
+    "unit": "bags/bunches",
+    "quantity": 8.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "8 bags chard"
+  },
+  {
+    "date": "2026-08-13",
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "quantity": 4.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "4 bags of kale"
+  },
+  {
+    "date": "2026-08-13",
+    "crop": "Green beans",
+    "unit": "bags/bunches",
+    "quantity": 3.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "3 bags of green beans"
+  },
+  {
+    "date": "2026-08-13",
+    "crop": "Hot Peppers",
+    "unit": "pint",
+    "quantity": 1.5,
+    "donated": false,
+    "notes": "",
+    "source_line": "3 half pints jalapeno"
+  },
+  {
+    "date": "2026-08-13",
+    "crop": "Peppers",
+    "unit": "#",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "1 bell pepper"
+  },
+  {
+    "date": "2026-08-13",
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "quantity": 53.0,
+    "donated": false,
+    "notes": "campari",
+    "source_line": "53 Slicing/campari tomatoes"
+  },
+  {
+    "date": "2026-08-19",
+    "crop": "Summer Squash",
+    "unit": "#",
+    "quantity": 9.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 18)",
+    "source_line": "18 summer squash"
+  },
+  {
+    "date": "2026-08-20",
+    "crop": "Summer Squash",
+    "unit": "#",
+    "quantity": 9.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 18)",
+    "source_line": "18 summer squash"
+  },
+  {
+    "date": "2026-08-19",
+    "crop": "Zucchini",
+    "unit": "#",
+    "quantity": 16.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 32)",
+    "source_line": "32 zucchini"
+  },
+  {
+    "date": "2026-08-20",
+    "crop": "Zucchini",
+    "unit": "#",
+    "quantity": 16.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 32)",
+    "source_line": "32 zucchini"
+  },
+  {
+    "date": "2026-08-19",
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "quantity": 22.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 44)",
+    "source_line": "44 pint cherry tomatoes"
+  },
+  {
+    "date": "2026-08-20",
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "quantity": 22.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 44)",
+    "source_line": "44 pint cherry tomatoes"
+  },
+  {
+    "date": "2026-08-19",
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "quantity": 1.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 3)",
+    "source_line": "3 bags kale"
+  },
+  {
+    "date": "2026-08-20",
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "quantity": 1.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 3)",
+    "source_line": "3 bags kale"
+  },
+  {
+    "date": "2026-08-19",
+    "crop": "Cucumbers",
+    "unit": "#",
+    "quantity": 1.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 3)",
+    "source_line": "3 cukes"
+  },
+  {
+    "date": "2026-08-20",
+    "crop": "Cucumbers",
+    "unit": "#",
+    "quantity": 1.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 3)",
+    "source_line": "3 cukes"
+  },
+  {
+    "date": "2026-08-19",
+    "crop": "Hot Peppers",
+    "unit": "#",
+    "quantity": 1.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 3)",
+    "source_line": "3 hot pepper"
+  },
+  {
+    "date": "2026-08-20",
+    "crop": "Hot Peppers",
+    "unit": "#",
+    "quantity": 1.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 3)",
+    "source_line": "3 hot pepper"
+  },
+  {
+    "date": "2026-08-19",
+    "crop": "Peppers",
+    "unit": "#",
+    "quantity": 1.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 3)",
+    "source_line": "3 sweet pepper"
+  },
+  {
+    "date": "2026-08-20",
+    "crop": "Peppers",
+    "unit": "#",
+    "quantity": 1.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 3)",
+    "source_line": "3 sweet pepper"
+  },
+  {
+    "date": "2026-08-19",
+    "crop": "Green beans",
+    "unit": "bags/bunches",
+    "quantity": 0.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 1)",
+    "source_line": "1 bag beans"
+  },
+  {
+    "date": "2026-08-20",
+    "crop": "Green beans",
+    "unit": "bags/bunches",
+    "quantity": 0.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 1)",
+    "source_line": "1 bag beans"
+  },
+  {
+    "date": "2026-08-19",
+    "crop": "Carrots",
+    "unit": "bags/bunches",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 2)",
+    "source_line": "2 carrots"
+  },
+  {
+    "date": "2026-08-20",
+    "crop": "Carrots",
+    "unit": "bags/bunches",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 2)",
+    "source_line": "2 carrots"
+  },
+  {
+    "date": "2026-08-19",
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "quantity": 38.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 76)",
+    "source_line": "76 tomatoes"
+  },
+  {
+    "date": "2026-08-20",
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "quantity": 38.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-19+2026-08-20 report (total 76)",
+    "source_line": "76 tomatoes"
+  },
+  {
+    "date": "2026-08-26",
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "quantity": 77.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 154)",
+    "source_line": "154 Tomatoes"
+  },
+  {
+    "date": "2026-08-27",
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "quantity": 77.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 154)",
+    "source_line": "154 Tomatoes"
+  },
+  {
+    "date": "2026-08-26",
+    "crop": "Zucchini",
+    "unit": "#",
+    "quantity": 6.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 13)",
+    "source_line": "13 zucchini"
+  },
+  {
+    "date": "2026-08-27",
+    "crop": "Zucchini",
+    "unit": "#",
+    "quantity": 6.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 13)",
+    "source_line": "13 zucchini"
+  },
+  {
+    "date": "2026-08-26",
+    "crop": "Summer Squash",
+    "unit": "#",
+    "quantity": 3.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 6)",
+    "source_line": "6 summer squash"
+  },
+  {
+    "date": "2026-08-27",
+    "crop": "Summer Squash",
+    "unit": "#",
+    "quantity": 3.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 6)",
+    "source_line": "6 summer squash"
+  },
+  {
+    "date": "2026-08-26",
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "quantity": 15.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 31)",
+    "source_line": "31 pint cherry"
+  },
+  {
+    "date": "2026-08-27",
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "quantity": 15.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 31)",
+    "source_line": "31 pint cherry"
+  },
+  {
+    "date": "2026-08-26",
+    "crop": "Cucumbers",
+    "unit": "#",
+    "quantity": 2.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 4)",
+    "source_line": "4 cucumbers"
+  },
+  {
+    "date": "2026-08-27",
+    "crop": "Cucumbers",
+    "unit": "#",
+    "quantity": 2.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 4)",
+    "source_line": "4 cucumbers"
+  },
+  {
+    "date": "2026-08-26",
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "quantity": 0.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 1)",
+    "source_line": "1 lettuce"
+  },
+  {
+    "date": "2026-08-27",
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "quantity": 0.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 1)",
+    "source_line": "1 lettuce"
+  },
+  {
+    "date": "2026-08-26",
+    "crop": "Peppers",
+    "unit": "#",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 2)",
+    "source_line": "2 sweet pepper"
+  },
+  {
+    "date": "2026-08-27",
+    "crop": "Peppers",
+    "unit": "#",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 2)",
+    "source_line": "2 sweet pepper"
+  },
+  {
+    "date": "2026-08-26",
+    "crop": "Hot Peppers",
+    "unit": "#",
+    "quantity": 2.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 5)",
+    "source_line": "5 jalape\u00f1o"
+  },
+  {
+    "date": "2026-08-27",
+    "crop": "Hot Peppers",
+    "unit": "#",
+    "quantity": 2.5,
+    "donated": false,
+    "notes": "split evenly from combined 2026-08-26+2026-08-27 report (total 5)",
+    "source_line": "5 jalape\u00f1o"
+  },
+  {
+    "date": "2026-09-03",
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "quantity": 7.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "7 bags kale"
+  },
+  {
+    "date": "2026-09-03",
+    "crop": "Swiss Chard",
+    "unit": "bags/bunches",
+    "quantity": 7.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "7 bags chard"
+  },
+  {
+    "date": "2026-09-03",
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "quantity": 235.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "235 tomatoes"
+  },
+  {
+    "date": "2026-09-03",
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "quantity": 25.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "25 pints cherry tomatoes"
+  },
+  {
+    "date": "2026-09-03",
+    "crop": "Zucchini",
+    "unit": "#",
+    "quantity": 16.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "16 zucchini / squash"
+  },
+  {
+    "date": "2026-09-03",
+    "crop": "Tomatoes, cherry",
+    "unit": "bags/bunches",
+    "quantity": 19.0,
+    "donated": false,
+    "notes": "Juliet variety",
+    "source_line": "19 bags Juliet"
+  },
+  {
+    "date": "2026-09-03",
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "quantity": 2.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "2 lettuce"
+  },
+  {
+    "date": "2026-09-03",
+    "crop": "Green beans",
+    "unit": "bags/bunches",
+    "quantity": 1.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "1 bag green beans"
+  },
+  {
+    "date": "2026-09-03",
+    "crop": "Cucumbers",
+    "unit": "#",
+    "quantity": 3.0,
+    "donated": false,
+    "notes": "",
+    "source_line": "3 cucumbers"
+  }
+]

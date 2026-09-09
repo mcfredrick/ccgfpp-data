@@ -4382,5 +4382,861 @@
     "date": "2025-10-09",
     "quantity": 5,
     "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Beets",
+    "unit": "bags/bunches",
+    "date": "2026-07-16",
+    "quantity": 5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Beets",
+    "unit": "bags/bunches",
+    "date": "2026-07-22",
+    "quantity": 3,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Beets",
+    "unit": "bags/bunches",
+    "date": "2026-08-05",
+    "quantity": 3,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Carrots",
+    "unit": "bags/bunches",
+    "date": "2026-08-13",
+    "quantity": 3,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Carrots",
+    "unit": "bags/bunches",
+    "date": "2026-08-19",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Carrots",
+    "unit": "bags/bunches",
+    "date": "2026-08-20",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Cilantro",
+    "unit": "bags/bunches",
+    "date": "2026-06-11",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Collards",
+    "unit": "bags/bunches",
+    "date": "2026-06-11",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Cucumbers",
+    "unit": "#",
+    "date": "2026-07-16",
+    "quantity": 4,
+    "donated": true
+  },
+  {
+    "year": 2026,
+    "crop": "Cucumbers",
+    "unit": "#",
+    "date": "2026-08-19",
+    "quantity": 1.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Cucumbers",
+    "unit": "#",
+    "date": "2026-08-20",
+    "quantity": 1.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Cucumbers",
+    "unit": "#",
+    "date": "2026-08-26",
+    "quantity": 2,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Cucumbers",
+    "unit": "#",
+    "date": "2026-08-27",
+    "quantity": 2,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Cucumbers",
+    "unit": "#",
+    "date": "2026-09-03",
+    "quantity": 3,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Garlic scapes",
+    "unit": "bags/bunches",
+    "date": "2026-06-11",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Garlic scapes",
+    "unit": "bags/bunches",
+    "date": "2026-06-24",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Green beans",
+    "unit": "lb",
+    "date": "2026-07-16",
+    "quantity": 0.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Green beans",
+    "unit": "lb",
+    "date": "2026-07-22",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Green beans",
+    "unit": "bags/bunches",
+    "date": "2026-07-30",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Green beans",
+    "unit": "bags/bunches",
+    "date": "2026-08-05",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Green beans",
+    "unit": "bags/bunches",
+    "date": "2026-08-13",
+    "quantity": 3,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Green beans",
+    "unit": "bags/bunches",
+    "date": "2026-08-19",
+    "quantity": 0.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Green beans",
+    "unit": "bags/bunches",
+    "date": "2026-08-20",
+    "quantity": 0.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Green beans",
+    "unit": "bags/bunches",
+    "date": "2026-09-03",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Hot Peppers",
+    "unit": "#",
+    "date": "2026-07-30",
+    "quantity": 2,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Hot Peppers",
+    "unit": "bags/bunches",
+    "date": "2026-08-05",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Hot Peppers",
+    "unit": "pint",
+    "date": "2026-08-13",
+    "quantity": 1.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Hot Peppers",
+    "unit": "#",
+    "date": "2026-08-19",
+    "quantity": 1.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Hot Peppers",
+    "unit": "#",
+    "date": "2026-08-20",
+    "quantity": 1.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Hot Peppers",
+    "unit": "#",
+    "date": "2026-08-26",
+    "quantity": 2.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Hot Peppers",
+    "unit": "#",
+    "date": "2026-08-27",
+    "quantity": 2.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "date": "2026-06-11",
+    "quantity": 3,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "date": "2026-07-09",
+    "quantity": 3,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Kale",
+    "unit": "lb",
+    "date": "2026-07-16",
+    "quantity": 4,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "date": "2026-07-22",
+    "quantity": 2,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "date": "2026-07-30",
+    "quantity": 6,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "date": "2026-08-05",
+    "quantity": 4,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "date": "2026-08-13",
+    "quantity": 4,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "date": "2026-08-19",
+    "quantity": 1.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "date": "2026-08-20",
+    "quantity": 1.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Kale",
+    "unit": "bags/bunches",
+    "date": "2026-09-03",
+    "quantity": 7,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "date": "2026-06-24",
+    "quantity": 7,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "date": "2026-07-02",
+    "quantity": 14,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "date": "2026-07-09",
+    "quantity": 6,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Lettuce",
+    "unit": "head",
+    "date": "2026-07-16",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "date": "2026-07-22",
+    "quantity": 8,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "date": "2026-08-05",
+    "quantity": 2,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "date": "2026-08-26",
+    "quantity": 0.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "date": "2026-08-27",
+    "quantity": 0.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Lettuce",
+    "unit": "bags/bunches",
+    "date": "2026-09-03",
+    "quantity": 2,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Mesclun Mix",
+    "unit": "bags/bunches",
+    "date": "2026-06-11",
+    "quantity": 6,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Peas",
+    "unit": "pint",
+    "date": "2026-07-02",
+    "quantity": 9,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Peas",
+    "unit": "pint",
+    "date": "2026-07-09",
+    "quantity": 8,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Peas",
+    "unit": "lb",
+    "date": "2026-07-16",
+    "quantity": 4,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Peppers",
+    "unit": "#",
+    "date": "2026-08-05",
+    "quantity": 4,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Peppers",
+    "unit": "#",
+    "date": "2026-08-13",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Peppers",
+    "unit": "#",
+    "date": "2026-08-19",
+    "quantity": 1.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Peppers",
+    "unit": "#",
+    "date": "2026-08-20",
+    "quantity": 1.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Peppers",
+    "unit": "#",
+    "date": "2026-08-26",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Peppers",
+    "unit": "#",
+    "date": "2026-08-27",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Radishes",
+    "unit": "bags/bunches",
+    "date": "2026-06-24",
+    "quantity": 3,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Summer Squash",
+    "unit": "#",
+    "date": "2026-07-02",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Summer Squash",
+    "unit": "#",
+    "date": "2026-07-09",
+    "quantity": 1,
+    "donated": true
+  },
+  {
+    "year": 2026,
+    "crop": "Summer Squash",
+    "unit": "#",
+    "date": "2026-07-16",
+    "quantity": 5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Summer Squash",
+    "unit": "#",
+    "date": "2026-07-22",
+    "quantity": 40,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Summer Squash",
+    "unit": "#",
+    "date": "2026-07-30",
+    "quantity": 20,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Summer Squash",
+    "unit": "#",
+    "date": "2026-08-05",
+    "quantity": 42,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Summer Squash",
+    "unit": "#",
+    "date": "2026-08-13",
+    "quantity": 29,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Summer Squash",
+    "unit": "#",
+    "date": "2026-08-19",
+    "quantity": 9,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Summer Squash",
+    "unit": "#",
+    "date": "2026-08-20",
+    "quantity": 9,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Summer Squash",
+    "unit": "#",
+    "date": "2026-08-26",
+    "quantity": 3,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Summer Squash",
+    "unit": "#",
+    "date": "2026-08-27",
+    "quantity": 3,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Swiss Chard",
+    "unit": "lb",
+    "date": "2026-07-16",
+    "quantity": 5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Swiss Chard",
+    "unit": "bags/bunches",
+    "date": "2026-07-22",
+    "quantity": 2,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Swiss Chard",
+    "unit": "bags/bunches",
+    "date": "2026-07-30",
+    "quantity": 5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Swiss Chard",
+    "unit": "bags/bunches",
+    "date": "2026-08-05",
+    "quantity": 4,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Swiss Chard",
+    "unit": "bags/bunches",
+    "date": "2026-08-13",
+    "quantity": 8,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Swiss Chard",
+    "unit": "bags/bunches",
+    "date": "2026-09-03",
+    "quantity": 7,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, cherry",
+    "unit": "bags/bunches",
+    "date": "2026-07-16",
+    "quantity": 1,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2026-08-05",
+    "quantity": 2,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2026-08-13",
+    "quantity": 24,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2026-08-19",
+    "quantity": 22,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2026-08-20",
+    "quantity": 22,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2026-08-26",
+    "quantity": 15.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2026-08-27",
+    "quantity": 15.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, cherry",
+    "unit": "bags/bunches",
+    "date": "2026-09-03",
+    "quantity": 19,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, cherry",
+    "unit": "pint",
+    "date": "2026-09-03",
+    "quantity": 25,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2026-07-22",
+    "quantity": 7,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2026-07-30",
+    "quantity": 11,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, slicer",
+    "unit": "pint",
+    "date": "2026-08-05",
+    "quantity": 2,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2026-08-13",
+    "quantity": 53,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2026-08-19",
+    "quantity": 38,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2026-08-20",
+    "quantity": 38,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2026-08-26",
+    "quantity": 77,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2026-08-27",
+    "quantity": 77,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Tomatoes, slicer",
+    "unit": "#",
+    "date": "2026-09-03",
+    "quantity": 235,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Turnips",
+    "unit": "bags/bunches",
+    "date": "2026-07-02",
+    "quantity": 2,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Zucchini",
+    "unit": "#",
+    "date": "2026-07-09",
+    "quantity": 7,
+    "donated": true
+  },
+  {
+    "year": 2026,
+    "crop": "Zucchini",
+    "unit": "#",
+    "date": "2026-07-16",
+    "quantity": 6,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Zucchini",
+    "unit": "#",
+    "date": "2026-07-22",
+    "quantity": 18,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Zucchini",
+    "unit": "#",
+    "date": "2026-07-30",
+    "quantity": 18,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Zucchini",
+    "unit": "#",
+    "date": "2026-08-05",
+    "quantity": 36,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Zucchini",
+    "unit": "#",
+    "date": "2026-08-19",
+    "quantity": 16,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Zucchini",
+    "unit": "#",
+    "date": "2026-08-20",
+    "quantity": 16,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Zucchini",
+    "unit": "#",
+    "date": "2026-08-26",
+    "quantity": 6.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Zucchini",
+    "unit": "#",
+    "date": "2026-08-27",
+    "quantity": 6.5,
+    "donated": false
+  },
+  {
+    "year": 2026,
+    "crop": "Zucchini",
+    "unit": "#",
+    "date": "2026-09-03",
+    "quantity": 16,
+    "donated": false
   }
 ]

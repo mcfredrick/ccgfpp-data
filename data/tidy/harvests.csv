@@ -547,3 +547,110 @@ year,crop,unit,date,quantity,donated
 2025,Zucchini,#,2025-09-25,8,False
 2025,Zucchini,#,2025-10-02,7,False
 2025,Zucchini,#,2025-10-09,5,False
+2026,Beets,bags/bunches,2026-07-16,5,False
+2026,Beets,bags/bunches,2026-07-22,3,False
+2026,Beets,bags/bunches,2026-08-05,3,False
+2026,Carrots,bags/bunches,2026-08-13,3,False
+2026,Carrots,bags/bunches,2026-08-19,1,False
+2026,Carrots,bags/bunches,2026-08-20,1,False
+2026,Cilantro,bags/bunches,2026-06-11,1,False
+2026,Collards,bags/bunches,2026-06-11,1,False
+2026,Cucumbers,#,2026-07-16,4,True
+2026,Cucumbers,#,2026-08-19,1.5,False
+2026,Cucumbers,#,2026-08-20,1.5,False
+2026,Cucumbers,#,2026-08-26,2,False
+2026,Cucumbers,#,2026-08-27,2,False
+2026,Cucumbers,#,2026-09-03,3,False
+2026,Garlic scapes,bags/bunches,2026-06-11,1,False
+2026,Garlic scapes,bags/bunches,2026-06-24,1,False
+2026,Green beans,lb,2026-07-16,0.5,False
+2026,Green beans,lb,2026-07-22,1,False
+2026,Green beans,bags/bunches,2026-07-30,1,False
+2026,Green beans,bags/bunches,2026-08-05,1,False
+2026,Green beans,bags/bunches,2026-08-13,3,False
+2026,Green beans,bags/bunches,2026-08-19,0.5,False
+2026,Green beans,bags/bunches,2026-08-20,0.5,False
+2026,Green beans,bags/bunches,2026-09-03,1,False
+2026,Hot Peppers,#,2026-07-30,2,False
+2026,Hot Peppers,bags/bunches,2026-08-05,1,False
+2026,Hot Peppers,pint,2026-08-13,1.5,False
+2026,Hot Peppers,#,2026-08-19,1.5,False
+2026,Hot Peppers,#,2026-08-20,1.5,False
+2026,Hot Peppers,#,2026-08-26,2.5,False
+2026,Hot Peppers,#,2026-08-27,2.5,False
+2026,Kale,bags/bunches,2026-06-11,3,False
+2026,Kale,bags/bunches,2026-07-09,3,False
+2026,Kale,lb,2026-07-16,4,False
+2026,Kale,bags/bunches,2026-07-22,2,False
+2026,Kale,bags/bunches,2026-07-30,6,False
+2026,Kale,bags/bunches,2026-08-05,4,False
+2026,Kale,bags/bunches,2026-08-13,4,False
+2026,Kale,bags/bunches,2026-08-19,1.5,False
+2026,Kale,bags/bunches,2026-08-20,1.5,False
+2026,Kale,bags/bunches,2026-09-03,7,False
+2026,Lettuce,bags/bunches,2026-06-24,7,False
+2026,Lettuce,bags/bunches,2026-07-02,14,False
+2026,Lettuce,bags/bunches,2026-07-09,6,False
+2026,Lettuce,head,2026-07-16,1,False
+2026,Lettuce,bags/bunches,2026-07-22,8,False
+2026,Lettuce,bags/bunches,2026-08-05,2,False
+2026,Lettuce,bags/bunches,2026-08-26,0.5,False
+2026,Lettuce,bags/bunches,2026-08-27,0.5,False
+2026,Lettuce,bags/bunches,2026-09-03,2,False
+2026,Mesclun Mix,bags/bunches,2026-06-11,6,False
+2026,Peas,pint,2026-07-02,9,False
+2026,Peas,pint,2026-07-09,8,False
+2026,Peas,lb,2026-07-16,4,False
+2026,Peppers,#,2026-08-05,4,False
+2026,Peppers,#,2026-08-13,1,False
+2026,Peppers,#,2026-08-19,1.5,False
+2026,Peppers,#,2026-08-20,1.5,False
+2026,Peppers,#,2026-08-26,1,False
+2026,Peppers,#,2026-08-27,1,False
+2026,Radishes,bags/bunches,2026-06-24,3,False
+2026,Summer Squash,#,2026-07-02,1,False
+2026,Summer Squash,#,2026-07-09,1,True
+2026,Summer Squash,#,2026-07-16,5,False
+2026,Summer Squash,#,2026-07-22,40,False
+2026,Summer Squash,#,2026-07-30,20,False
+2026,Summer Squash,#,2026-08-05,42,False
+2026,Summer Squash,#,2026-08-13,29,False
+2026,Summer Squash,#,2026-08-19,9,False
+2026,Summer Squash,#,2026-08-20,9,False
+2026,Summer Squash,#,2026-08-26,3,False
+2026,Summer Squash,#,2026-08-27,3,False
+2026,Swiss Chard,lb,2026-07-16,5,False
+2026,Swiss Chard,bags/bunches,2026-07-22,2,False
+2026,Swiss Chard,bags/bunches,2026-07-30,5,False
+2026,Swiss Chard,bags/bunches,2026-08-05,4,False
+2026,Swiss Chard,bags/bunches,2026-08-13,8,False
+2026,Swiss Chard,bags/bunches,2026-09-03,7,False
+2026,"Tomatoes, cherry",bags/bunches,2026-07-16,1,False
+2026,"Tomatoes, cherry",pint,2026-08-05,2,False
+2026,"Tomatoes, cherry",pint,2026-08-13,24,False
+2026,"Tomatoes, cherry",pint,2026-08-19,22,False
+2026,"Tomatoes, cherry",pint,2026-08-20,22,False
+2026,"Tomatoes, cherry",pint,2026-08-26,15.5,False
+2026,"Tomatoes, cherry",pint,2026-08-27,15.5,False
+2026,"Tomatoes, cherry",bags/bunches,2026-09-03,19,False
+2026,"Tomatoes, cherry",pint,2026-09-03,25,False
+2026,"Tomatoes, slicer",#,2026-07-22,7,False
+2026,"Tomatoes, slicer",#,2026-07-30,11,False
+2026,"Tomatoes, slicer",pint,2026-08-05,2,False
+2026,"Tomatoes, slicer",#,2026-08-13,53,False
+2026,"Tomatoes, slicer",#,2026-08-19,38,False
+2026,"Tomatoes, slicer",#,2026-08-20,38,False
+2026,"Tomatoes, slicer",#,2026-08-26,77,False
+2026,"Tomatoes, slicer",#,2026-08-27,77,False
+2026,"Tomatoes, slicer",#,2026-09-03,235,False
+2026,Turnips,bags/bunches,2026-07-02,2,False
+2026,Zucchini,#,2026-07-09,7,True
+2026,Zucchini,#,2026-07-16,6,False
+2026,Zucchini,#,2026-07-22,18,False
+2026,Zucchini,#,2026-07-30,18,False
+2026,Zucchini,#,2026-08-05,36,False
+2026,Zucchini,#,2026-08-19,16,False
+2026,Zucchini,#,2026-08-20,16,False
+2026,Zucchini,#,2026-08-26,6.5,False
+2026,Zucchini,#,2026-08-27,6.5,False
+2026,Zucchini,#,2026-09-03,16,False
