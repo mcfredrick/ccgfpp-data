@@ -19,14 +19,18 @@
   @media (prefers-color-scheme: dark) {
     :root {
       color-scheme: dark;
-      --page:           #0d0d0d;
-      --surface-1:      #1a1a19;
-      --text-primary:   #ffffff;
-      --text-secondary: #c3c2b7;
-      --text-muted:     #898781;
-      --border:         rgba(255,255,255,0.10);
-      --baseline:       #383835;
-      --track:          #2c2c2a;
+      /* One flat cheerful green for the whole page -- --surface-1 stays a hair
+         off --page (same relationship as light mode's #f9f9f7/#fcfcfb) instead
+         of the near-black card look this used to have, so there's no separate
+         "block" behind the controls/piles, just a barely-there lift + border. */
+      --page:           #8fd694;
+      --surface-1:      #97da9b;
+      --text-primary:   #0d2f1c;
+      --text-secondary: #1f5e33;
+      --text-muted:     #296b3b;
+      --border:         rgba(13,47,28,0.18);
+      --baseline:       #6fbd79;
+      --track:          #6fbd79;
     }
   }
 
@@ -149,7 +153,7 @@
   .presets button {
     font: inherit;
     font-size: 12px;
-    color: var(--text-secondary);
+    color: var(--text-muted);
     background: var(--page);
     border: 1px solid var(--border);
     border-radius: 999px;
@@ -166,18 +170,38 @@
   }
   .lanes {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+  }
+  /* One full-width row per crop instead of a grid of narrow columns -- wider,
+     shorter stage, with room on the right reserved for stats beyond the
+     per-year comparison strip (see site/design-notes.md backlog items on
+     above/below-average and season-trend indicators). */
+  .lane {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .lane:last-child {
+    border-bottom: none;
+  }
+  .lane-info {
+    flex: 0 0 150px;
+  }
+  .lane-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  .lane-count-row {
+    display: flex;
+    align-items: baseline;
     gap: 4px;
   }
-  .lane {
-    flex: 0 0 130px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .lane-count {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
     font-variant-numeric: tabular-nums;
   }
@@ -189,12 +213,12 @@
     font-size: 10px;
     color: var(--text-muted);
     font-style: italic;
-    margin-bottom: 8px;
   }
   .lane-stage {
     position: relative;
-    width: 100%;
-    height: 240px;
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 120px;
     overflow: hidden;
   }
   .icon {
@@ -203,21 +227,12 @@
     will-change: transform;
   }
   .icon svg { width: 100%; height: 100%; display: block; }
-  .lane-name {
-    margin-top: 8px;
-    font-size: 12px;
-    color: var(--text-secondary);
-    text-align: center;
-  }
   .compare {
+    flex: 0 0 230px;
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 4px;
-    margin-top: 10px;
-    padding-top: 8px;
-    padding-bottom: 16px;
-    border-top: 1px solid var(--border);
   }
   .compare-col {
     display: flex;
@@ -308,7 +323,7 @@
   </div>
 
   <p class="footnote">
-    Each crop keeps its own recorded unit (bunches, "#", pints) rather than converting to a common measure — 1 icon = 5 units, so pile height is comparable across crops even though the unit differs. Weight/meal-equivalent conversions are planned as a separate, secondary view. The small bars under each pile compare the same calendar window (by month/day, not exact week) across every season in the data — the highlighted bar is the season currently selected above, and the hollow italic "avg" bar is the mean across every season for that same window. Use the "Week" dropdown to jump straight to a single week.
+    Each crop keeps its own recorded unit (bunches, "#", pints) rather than converting to a common measure. Every icon's count is exact — small piles show one icon per unit, and past 50 icons a pile is mostly larger "bulk" icons (each worth several units, sized up so bigger totals still read as bigger piles) topped off with individual icons for the leftover, so the printed count and the pile always agree. Weight/meal-equivalent conversions are planned as a separate, secondary view. The bars beside each pile compare the same calendar window (by month/day, not exact week) across every season in the data — the highlighted bar is the season currently selected above, and the hollow italic "avg" bar is the mean across every season for that same window. Use the "Week" dropdown to jump straight to a single week.
   </p>
 </main>
 
@@ -353,7 +368,14 @@
     return { shape, ...goldenAngleColor(orderIndex) };
   }
 
-  const UNITS_PER_ICON = 5;
+  // Every pile is exact -- no icon silently represents more than the label
+  // says -- without letting a big total blow up the O(n^2) collision cost
+  // (design-notes.md item 3). Past MAX_LANE_BODIES icons, most of a pile is
+  // built from a few "bulk" icons (each explicitly worth several units, sized
+  // up by area so bigger totals still read as bigger piles), topped off with
+  // individual value-1 icons for the leftover that don't evenly divide into a
+  // bulk unit. bulkCount*bulkValue + remainderCount === the exact total always.
+  const MAX_LANE_BODIES = 50;
   const GRAVITY = 0.6;
   const DAMPING = 0.98;
   const SPAWN_INTERVAL_MS = 18;
@@ -485,6 +507,27 @@
   // actual week dates don't line up (2025 starts 6/5, 2022 starts 6/2, etc).
   const mdKey = dateStr => dateStr.slice(5);
 
+  // The calendar week (Sun-Sat) containing a given date -- widens the
+  // comparison window to a real week instead of an arbitrary day-count pad,
+  // so it lines up with the same "week" concept the Week dropdown already
+  // uses, and gives a stable, week-shaped result regardless of which day
+  // within that week happens to be selected. Reports land on irregular
+  // ~weekly dates that rarely fall on the exact same calendar day across
+  // seasons (and the "today" slider boundary added for the current season --
+  // see setupYear -- often isn't a report date in ANY season yet), so an
+  // exact MM-DD match would rarely find anything.
+  const weekStart = dateStr => {
+    const d = new Date(dateStr + "T00:00:00");
+    d.setDate(d.getDate() - d.getDay());
+    return d;
+  };
+  const weekEnd = dateStr => {
+    const d = weekStart(dateStr);
+    d.setDate(d.getDate() + 6);
+    return d;
+  };
+  const mdKeyOfDate = d => mdKey(d.toISOString().slice(0, 10));
+
   // For every year, total each crop's quantity within the given month/day window
   // (inclusive). Used to compare "the same time range" across seasons.
   function totalsByYearForMdRange(fromMD, toMD) {
@@ -499,6 +542,22 @@
     return byYear;
   }
 
+  // Widens [fromIdx, toIdx] to the full calendar weeks containing each end,
+  // then totals every year within that window. Shared by triggerDump (which
+  // needs the historical average as a sort fallback) and renderCompare
+  // (which needs the full per-year breakdown) so the two never disagree and
+  // the week math only happens once per range change.
+  function computeCompareByYear(fromIdx, toIdx) {
+    const fromMD = mdKeyOfDate(weekStart(WEEKS[fromIdx]));
+    const toMD = mdKeyOfDate(weekEnd(WEEKS[toIdx]));
+    return totalsByYearForMdRange(fromMD, toMD);
+  }
+
+  function avgFromByYear(byYear, crop) {
+    const values = YEARS.map(y => byYear[y][crop] || 0);
+    return values.reduce((a, b) => a + b, 0) / values.length;
+  }
+
   // ---- physics ----
   const lanes = [];
 
@@ -510,11 +569,15 @@
       const lane = document.createElement("div");
       lane.className = "lane";
       lane.innerHTML = `
-        <div class="lane-count" data-count>0</div>
-        <div class="lane-unit" data-unit></div>
-        <div class="lane-season-total" data-season-total></div>
+        <div class="lane-info">
+          <div class="lane-name">${c.crop}</div>
+          <div class="lane-count-row">
+            <span class="lane-count" data-count>0</span>
+            <span class="lane-unit" data-unit></span>
+          </div>
+          <div class="lane-season-total" data-season-total></div>
+        </div>
         <div class="lane-stage" data-stage></div>
-        <div class="lane-name">${c.crop}</div>
         <div class="compare" data-compare></div>
       `;
       container.appendChild(lane);
@@ -523,6 +586,7 @@
         crop: c.crop,
         color: isDark() ? c.darkColor : c.color,
         shape: c.shape,
+        laneEl: lane,
         stageEl,
         countEl: lane.querySelector("[data-count]"),
         unitEl: lane.querySelector("[data-unit]"),
@@ -566,11 +630,12 @@
     return bestBin;
   }
 
-  function spawnIcon(lane, radius) {
+  function spawnIcon(lane, radius, value) {
     const width = lane.stageEl.clientWidth;
     const el = document.createElement("div");
     el.className = "icon";
     el.style.width = el.style.height = radius * 2 + "px";
+    if (value > 1) el.title = `${value.toLocaleString()} ${lane.crop}`;
     el.innerHTML = svgFor(lane.shape, lane.color);
     lane.stageEl.appendChild(el);
 
@@ -585,6 +650,7 @@
     const icon = {
       el,
       r: radius,
+      value,
       x,
       y,
       oldX: x - (Math.random() - 0.5) * 1.5, // implied initial vx via Verlet
@@ -615,7 +681,7 @@
   let spawnQueue = [];
   let spawnTimer = null;
 
-  function triggerDump(fromIdx, toIdx) {
+  function triggerDump(fromIdx, toIdx, byYear) {
     const totals = countsForRange(fromIdx, toIdx);
     lanes.forEach(lane => {
       clearLane(lane);
@@ -624,19 +690,73 @@
       // zero entries in the selected year (e.g. Peppers wasn't tracked in 2023)
       const unitSource = RECORDS.find(r => r.crop === lane.crop) || allRecords.find(r => r.crop === lane.crop) || {};
       const unit = unitSource.unit || "";
-      lane.countEl.textContent = Math.round(total).toLocaleString();
+      const roundedTotal = Math.round(total);
+      lane.countEl.textContent = roundedTotal.toLocaleString();
       lane.unitEl.textContent = unit;
-      lane.iconTarget = Math.max(total > 0 ? 1 : 0, Math.round(total / UNITS_PER_ICON));
-      lane.iconRadius = radiusForCount(lane.iconTarget, lane.stageEl.clientWidth, lane.stageEl.clientHeight);
+
+      // baseRadius: the size a value-1 icon would need for exactly `roundedTotal`
+      // of them to fill the stage -- used as-is for every icon under the body
+      // budget, and as the area unit that bulk icons scale up from once we're over it.
+      const baseRadius = radiusForCount(roundedTotal, lane.stageEl.clientWidth, lane.stageEl.clientHeight);
+      lane.baseRadius = baseRadius;
+      if (roundedTotal <= MAX_LANE_BODIES) {
+        lane.bulkValue = 1;
+        lane.bulkCount = 0;
+        lane.remainderCount = roundedTotal;
+      } else {
+        const bulkValue = Math.ceil(roundedTotal / MAX_LANE_BODIES);
+        lane.bulkValue = bulkValue;
+        lane.bulkCount = Math.floor(roundedTotal / bulkValue);
+        lane.remainderCount = roundedTotal - lane.bulkCount * bulkValue;
+      }
+      // area (not radius) scales with value, so a bulk icon's visual size honestly
+      // reflects how many units it stands in for, same as N unit icons would cover
+      lane.bulkRadius = Math.min(MAX_ICON_RADIUS, baseRadius * Math.sqrt(lane.bulkValue));
+    });
+
+    // Visual lane order: most-to-least numerous for the selected range first.
+    // Among crops with nothing in the selected range, fall back to the
+    // historical average for that same week (see computeCompareByYear) rather
+    // than dumping them all into plain alphabetical order -- a crop that's
+    // reliably productive this time of year but just hasn't been reported yet
+    // this week should still rank above one that's never grown this time of
+    // year at all. Alphabetical is the last-resort tiebreaker either way.
+    // Only the CSS `order` moves -- color/shape stay tied to GLOBAL_CROP_ORDER
+    // so a crop's identity stays stable even as its position shifts.
+    lanes.slice()
+      .sort((a, b) => {
+        const totalA = totals[a.crop] || 0;
+        const totalB = totals[b.crop] || 0;
+        const zeroA = totalA <= 0, zeroB = totalB <= 0;
+        if (zeroA !== zeroB) return zeroA ? 1 : -1;
+        if (!zeroA) {
+          if (totalB !== totalA) return totalB - totalA;
+          return a.crop.localeCompare(b.crop);
+        }
+        const avgA = avgFromByYear(byYear, a.crop);
+        const avgB = avgFromByYear(byYear, b.crop);
+        if (avgB !== avgA) return avgB - avgA;
+        return a.crop.localeCompare(b.crop);
+      })
+      .forEach((lane, i) => { lane.laneEl.style.order = i; });
+
+    // Bulk icons land as a group up front -- most of a big pile's mass is
+    // already sitting there settling within the same beat, not trickling in
+    // one at a time. Only the true leftover (< bulkValue units, so always
+    // small) gets the individually-animated drop.
+    lanes.forEach(lane => {
+      for (let i = 0; i < lane.bulkCount; i++) {
+        spawnIcon(lane, lane.bulkRadius, lane.bulkValue);
+      }
     });
 
     if (spawnTimer) clearInterval(spawnTimer);
-    spawnQueue = lanes.map(lane => ({ lane, remaining: lane.iconTarget }));
+    spawnQueue = lanes.map(lane => ({ lane, remaining: lane.remainderCount }));
     spawnTimer = setInterval(() => {
       let anyLeft = false;
       spawnQueue.forEach(q => {
         if (q.remaining > 0) {
-          spawnIcon(q.lane, q.lane.iconRadius);
+          spawnIcon(q.lane, q.lane.baseRadius, 1);
           q.remaining--;
           anyLeft = true;
         }
@@ -772,11 +892,7 @@
     });
   }
 
-  function renderCompare(fromIdx, toIdx) {
-    const fromMD = mdKey(WEEKS[fromIdx]);
-    const toMD = mdKey(WEEKS[toIdx]);
-    const byYear = totalsByYearForMdRange(fromMD, toMD);
-
+  function renderCompare(fromIdx, toIdx, byYear) {
     lanes.forEach(lane => {
       const values = YEARS.map(y => byYear[y][lane.crop] || 0);
       const avgVal = values.reduce((a, b) => a + b, 0) / values.length;
@@ -815,8 +931,9 @@
     let to = parseInt(toSlider.value, 10);
     if (from > to) { [from, to] = [to, from]; }
     rangeLabel.textContent = `${fmt(WEEKS[from])} – ${fmt(WEEKS[to])}, ${YEAR}`;
-    triggerDump(from, to);
-    renderCompare(from, to);
+    const byYear = computeCompareByYear(from, to);
+    triggerDump(from, to, byYear);
+    renderCompare(from, to, byYear);
     // keep the week dropdown in sync -- shows a specific week only when the range
     // actually IS a single week, and resets to the placeholder otherwise (a custom
     // drag or a month preset no longer corresponds to one week's selection)
