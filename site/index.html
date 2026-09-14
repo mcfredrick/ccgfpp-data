@@ -227,6 +227,20 @@
     will-change: transform;
   }
   .icon svg { width: 100%; height: 100%; display: block; }
+  /* The count a bulk icon stands for, printed on top of it -- white with a
+     dark outline so it stays legible over any crop color. */
+  .icon-value {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    line-height: 1;
+    color: #fff;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
   .compare {
     flex: 0 0 230px;
     display: flex;
@@ -349,7 +363,7 @@
   </div>
 
   <p class="footnote">
-    Each crop keeps its own recorded unit (bunches, "#", pints) rather than converting to a common measure. Every icon's count is exact — small piles show one icon per unit, and past 50 icons a pile is mostly larger "bulk" icons (each worth several units, sized up so bigger totals still read as bigger piles) topped off with individual icons for the leftover, so the printed count and the pile always agree. Weight/meal-equivalent conversions are planned as a separate, secondary view. The bars beside each pile compare the same calendar window (by month/day, not exact week) across every season in the data — the highlighted bar is the season currently selected above, and the hollow italic "avg" bar is the mean across every season for that same window. Use the "Week" dropdown to jump straight to a single week.
+    Each crop keeps its own recorded unit (bunches, "#", pints) rather than converting to a common measure. Every icon's count is exact — small piles show one icon per unit, and past 50 icons a pile is mostly larger "bulk" icons, each labeled with the exact count it stands for, topped off with individual icons for the leftover, so the printed count and the pile always agree. Weight/meal-equivalent conversions are planned as a separate, secondary view. The bars beside each pile compare the same calendar window (by month/day, not exact week) across every season in the data — the highlighted bar is the season currently selected above, and the hollow italic "avg" bar is the mean across every season for that same window. Use the "Week" dropdown to jump straight to a single week.
   </p>
 </main>
 
@@ -417,6 +431,9 @@
   const MAX_AWAKE_FRAMES = 900;
   const MAX_ICON_RADIUS = 9;
   const MIN_ICON_RADIUS = 4;
+  // Bulk icons carry a printed number (see spawnIcon), so they need more room
+  // than a plain unit icon's cap allows to stay legible at 2-3 digits.
+  const MAX_BULK_ICON_RADIUS = 17;
   // Caps the implied Verlet velocity from a single frame's overlap correction --
   // without this, a densely packed lane (many icons, narrow width) can chain
   // several large corrections in one frame and launch an icon off-screen instead
@@ -661,8 +678,19 @@
     const el = document.createElement("div");
     el.className = "icon";
     el.style.width = el.style.height = radius * 2 + "px";
-    if (value > 1) el.title = `${value.toLocaleString()} ${lane.crop}`;
     el.innerHTML = svgFor(lane.shape, lane.color);
+    // Sizing alone was too subtle to read as "this icon is worth more" (a
+    // handful of bulk icons look nearly the same as the unit icons around
+    // them at a glance) -- print the exact count it stands for directly on
+    // the icon instead.
+    if (value > 1) {
+      el.title = `${value.toLocaleString()} ${lane.crop}`;
+      const label = document.createElement("span");
+      label.className = "icon-value";
+      label.style.fontSize = Math.max(8, radius * 0.62) + "px";
+      label.textContent = value.toLocaleString();
+      el.appendChild(label);
+    }
     lane.stageEl.appendChild(el);
 
     const bin = pickSpawnBin(lane);
@@ -737,7 +765,7 @@
       }
       // area (not radius) scales with value, so a bulk icon's visual size honestly
       // reflects how many units it stands in for, same as N unit icons would cover
-      lane.bulkRadius = Math.min(MAX_ICON_RADIUS, baseRadius * Math.sqrt(lane.bulkValue));
+      lane.bulkRadius = Math.min(MAX_BULK_ICON_RADIUS, baseRadius * Math.sqrt(lane.bulkValue));
     });
 
     // Visual lane order: most-to-least numerous for the selected range first.
