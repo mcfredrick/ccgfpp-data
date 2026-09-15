@@ -162,6 +162,55 @@
   }
   .presets button:hover { color: var(--text-primary); }
 
+  /* At-a-glance counts for the selected range. A CSS grid instead of a rigid
+     table -- auto-fill reflows the column count to whatever width is
+     available instead of forcing a fixed-width layout wide enough to
+     overflow a phone screen (see the .lane mobile breakpoint below for the
+     bug that pattern already caused once). */
+  .summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 8px 12px;
+    margin-bottom: 16px;
+  }
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 8px;
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    min-width: 0;
+  }
+  .summary-crop {
+    font-size: 12px;
+    color: var(--text-secondary);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .summary-count {
+    font-size: 13px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    flex: 0 0 auto;
+  }
+  .summary-unit {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-left: 2px;
+  }
+  .summary-empty {
+    grid-column: 1 / -1;
+    font-size: 12px;
+    color: var(--text-muted);
+    font-style: italic;
+    margin: 0;
+  }
+
   .stage {
     background: var(--surface-1);
     border: 1px solid var(--border);
@@ -227,20 +276,6 @@
     will-change: transform;
   }
   .icon svg { width: 100%; height: 100%; display: block; }
-  /* The count a bulk icon stands for, printed on top of it -- white with a
-     dark outline so it stays legible over any crop color. */
-  .icon-value {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    line-height: 1;
-    color: #fff;
-    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.8);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  }
   .compare {
     flex: 0 0 230px;
     display: flex;
@@ -363,7 +398,7 @@
   </div>
 
   <p class="footnote">
-    Each crop keeps its own recorded unit (bunches, "#", pints) rather than converting to a common measure. Every icon's count is exact — small piles show one icon per unit, and past 50 icons a pile is mostly larger "bulk" icons, each labeled with the exact count it stands for, topped off with individual icons for the leftover, so the printed count and the pile always agree. Weight/meal-equivalent conversions are planned as a separate, secondary view. The bars beside each pile compare the same calendar window (by month/day, not exact week) across every season in the data — the highlighted bar is the season currently selected above, and the hollow italic "avg" bar is the mean across every season for that same window. Use the "Week" dropdown to jump straight to a single week.
+    Each crop keeps its own recorded unit (bunches, "#", pints) rather than converting to a common measure. Every icon's count is exact — small piles show one icon per unit, and past 50 icons a pile is mostly larger "bulk" icons, each shown as a cluster standing in for several units (hover one for the exact count), topped off with individual icons for the leftover, so the printed count and the pile always agree. Weight/meal-equivalent conversions are planned as a separate, secondary view. The bars beside each pile compare the same calendar window (by month/day, not exact week) across every season in the data — the highlighted bar is the season currently selected above, and the hollow italic "avg" bar is the mean across every season for that same window. Use the "Week" dropdown to jump straight to a single week.
   </p>
 </main>
 
@@ -431,8 +466,9 @@
   const MAX_AWAKE_FRAMES = 900;
   const MAX_ICON_RADIUS = 9;
   const MIN_ICON_RADIUS = 4;
-  // Bulk icons carry a printed number (see spawnIcon), so they need more room
-  // than a plain unit icon's cap allows to stay legible at 2-3 digits.
+  // Bulk icons render as a 3-shape cluster (see svgForCluster), so they need
+  // more room than a plain unit icon's cap allows for the cluster to read as
+  // multiple overlapping shapes instead of a blob.
   const MAX_BULK_ICON_RADIUS = 17;
   // Caps the implied Verlet velocity from a single frame's overlap correction --
   // without this, a densely packed lane (many icons, narrow width) can chain
@@ -497,6 +533,7 @@
       </div>
       <div class="presets" id="presets"></div>
     </div>
+    <div class="summary" id="summary"></div>
     <div class="stage">
       <div class="lanes" id="lanes"></div>
     </div>
@@ -505,6 +542,7 @@
   const yearSelect = document.getElementById("yearSelect");
   const weekSelect = document.getElementById("weekSelect");
   const presetsEl = document.getElementById("presets");
+  const summaryEl = document.getElementById("summary");
 
   function rebuildPresets() {
     presetsEl.innerHTML = `<button data-preset="full">Full season</button>`;
@@ -531,6 +569,22 @@
 
   function svgFor(shape, color) {
     return `<svg viewBox="0 0 24 24" fill="${color}">${SHAPES[shape]}</svg>`;
+  }
+
+  // Bulk icons (see spawnIcon) render as a small cluster of the crop's own
+  // shape instead of one shape plus a printed number -- a number readable at
+  // icon scale turned out to be a losing battle, but "this is visibly a
+  // bunch, not a single item" doesn't need to be read as text at all.
+  const CLUSTER_COPIES = [
+    { tx: 0, ty: 0, s: 0.56 },
+    { tx: 9, ty: 1, s: 0.56 },
+    { tx: 4.5, ty: 9.5, s: 0.6 },
+  ];
+  function svgForCluster(shape, color) {
+    const copies = CLUSTER_COPIES
+      .map(c => `<g transform="translate(${c.tx},${c.ty}) scale(${c.s})">${SHAPES[shape]}</g>`)
+      .join("");
+    return `<svg viewBox="0 0 24 24" fill="${color}">${copies}</svg>`;
   }
 
   function countsForRange(fromIdx, toIdx) {
@@ -678,19 +732,8 @@
     const el = document.createElement("div");
     el.className = "icon";
     el.style.width = el.style.height = radius * 2 + "px";
-    el.innerHTML = svgFor(lane.shape, lane.color);
-    // Sizing alone was too subtle to read as "this icon is worth more" (a
-    // handful of bulk icons look nearly the same as the unit icons around
-    // them at a glance) -- print the exact count it stands for directly on
-    // the icon instead.
-    if (value > 1) {
-      el.title = `${value.toLocaleString()} ${lane.crop}`;
-      const label = document.createElement("span");
-      label.className = "icon-value";
-      label.style.fontSize = Math.max(8, radius * 0.62) + "px";
-      label.textContent = value.toLocaleString();
-      el.appendChild(label);
-    }
+    el.innerHTML = value > 1 ? svgForCluster(lane.shape, lane.color) : svgFor(lane.shape, lane.color);
+    if (value > 1) el.title = `${value.toLocaleString()} ${lane.crop}`;
     lane.stageEl.appendChild(el);
 
     const bin = pickSpawnBin(lane);
@@ -735,8 +778,7 @@
   let spawnQueue = [];
   let spawnTimer = null;
 
-  function triggerDump(fromIdx, toIdx, byYear) {
-    const totals = countsForRange(fromIdx, toIdx);
+  function triggerDump(fromIdx, toIdx, totals, byYear) {
     lanes.forEach(lane => {
       clearLane(lane);
       const total = totals[lane.crop] || 0;
@@ -946,6 +988,30 @@
     });
   }
 
+  // At-a-glance counts for the selected range -- only crops with something
+  // in that range, most-to-least numerous, same tiebreaker as the pile order.
+  function renderSummary(totals) {
+    const items = CROPS
+      .map(c => ({ crop: c.crop, total: totals[c.crop] || 0 }))
+      .filter(item => item.total > 0)
+      .sort((a, b) => b.total - a.total || a.crop.localeCompare(b.crop));
+
+    if (items.length === 0) {
+      summaryEl.innerHTML = `<p class="summary-empty">Nothing recorded yet for this range.</p>`;
+      return;
+    }
+
+    summaryEl.innerHTML = items.map(({ crop, total }) => {
+      const unitSource = RECORDS.find(r => r.crop === crop) || allRecords.find(r => r.crop === crop) || {};
+      return `
+        <div class="summary-item">
+          <span class="summary-crop">${crop}</span>
+          <span class="summary-count">${Math.round(total).toLocaleString()}<span class="summary-unit">${unitSource.unit || ""}</span></span>
+        </div>
+      `;
+    }).join("");
+  }
+
   function renderCompare(fromIdx, toIdx, byYear) {
     lanes.forEach(lane => {
       const values = YEARS.map(y => byYear[y][lane.crop] || 0);
@@ -985,8 +1051,10 @@
     let to = parseInt(toSlider.value, 10);
     if (from > to) { [from, to] = [to, from]; }
     rangeLabel.textContent = `${fmt(WEEKS[from])} – ${fmt(WEEKS[to])}, ${YEAR}`;
+    const totals = countsForRange(from, to);
     const byYear = computeCompareByYear(from, to);
-    triggerDump(from, to, byYear);
+    triggerDump(from, to, totals, byYear);
+    renderSummary(totals);
     renderCompare(from, to, byYear);
     // keep the week dropdown in sync -- shows a specific week only when the range
     // actually IS a single week, and resets to the placeholder otherwise (a custom
